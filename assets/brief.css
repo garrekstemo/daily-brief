@@ -1,34 +1,128 @@
-:root{
-  --bg:#ffffff; --fg:#1a1a1a; --muted:#6b6b6b; --line:#e6e6e6;
-  --link:#1a4f8b; --body:#333333; --maxw:980px;
+/* Daily Brief — styled to match garrek.org */
+/* Serif (Lyon Text -> Georgia) for headlines & prose; Courier Prime for accents. */
+
+@font-face{
+  font-family:"Courier Prime"; font-weight:400; font-style:normal;
+  src:local("Courier Prime"),url(/assets/fonts/Courier-Prime/CourierPrime-Regular.ttf) format("truetype");
 }
+@font-face{
+  font-family:"Courier Prime"; font-weight:700; font-style:normal;
+  src:local("Courier Prime"),url(/assets/fonts/Courier-Prime/CourierPrime-Bold.ttf) format("truetype");
+}
+@font-face{
+  font-family:"Courier Prime"; font-weight:400; font-style:italic;
+  src:local("Courier Prime"),url(/assets/fonts/Courier-Prime/CourierPrime-Italic.ttf) format("truetype");
+}
+
+:root{
+  --serif:"Lyon Text", Georgia, "Times New Roman", serif;
+  --mono:"Courier Prime", "Courier New", Courier, monospace;
+  --maxw:960px;
+
+  --bg:#ffffff;
+  --fg:#202020;
+  --head:#000000;
+  --muted:#555555;
+  --faint:#818181;
+  --line:#e2e2e2;
+  --deco:#2090e0;   /* blue link underline */
+  --accent:#e05a3a; /* orange-red hover */
+  --nav:#1478d4;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#15252b;
+    --fg:#d0d0d0;
+    --head:#d4795a;
+    --muted:#93a1a4;
+    --faint:#7c8a8e;
+    --line:#33474e;
+    --deco:#2090e0;
+    --accent:#e8734f;
+    --nav:#5aafe6;
+  }
+}
+
 *{box-sizing:border-box}
 html,body{margin:0}
-body{background:var(--bg);color:var(--fg);
-  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-a{color:var(--link);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
-.mast{display:flex;justify-content:space-between;align-items:baseline;
-  padding:18px 0 12px;border-bottom:2px solid var(--fg)}
-.mast .t{font-weight:800;font-size:22px;letter-spacing:.2px}
-.mast .d{color:var(--muted);font-size:13px}
-.grid{display:grid;grid-template-columns:1fr 320px;gap:34px;padding:22px 0 60px}
-.main .item{margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+body{
+  background:var(--bg); color:var(--fg);
+  font-family:var(--serif);
+  font-size:17px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+a{color:var(--nav); text-decoration:none}
+
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+
+/* Masthead — mirrors garrek.org .site-header */
+.mast{
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding:22px 0 12px; margin-bottom:6px;
+  border-bottom:1px solid var(--fg);
+}
+.mast .t{
+  font-family:var(--serif); font-size:1.7rem; font-weight:700;
+  color:var(--head); letter-spacing:.1px;
+}
+.mast .d{
+  font-family:var(--mono); color:var(--muted);
+  font-size:.78rem; font-weight:400;
+}
+
+/* Layout */
+.grid{display:grid; grid-template-columns:1fr 300px; gap:42px; padding:26px 0 64px}
+
+/* Main column */
+.main .item{margin-bottom:26px; padding-bottom:22px; border-bottom:1px solid var(--line)}
 .main .item:last-child{border-bottom:none}
-.item .h{font-weight:650;font-size:17px;line-height:1.3}
-.item .m{color:var(--muted);font-size:12.5px;margin:4px 0 6px}
-.item .b{font-size:14.5px;line-height:1.5;color:var(--body)}
-.side{font-size:13px}
-.side .si{margin-bottom:13px;line-height:1.4}
-.side .si .h{font-weight:600;font-size:13.5px}
-.side .si .m{color:var(--muted);font-size:11.5px;margin-top:2px}
-.side .divider{border-top:1px solid var(--line);margin:16px 0}
-.side .jump a{display:block;color:var(--muted);font-size:12.5px;padding:3px 0}
-.side .jump a:hover{color:var(--link)}
-.foot{color:var(--muted);font-size:12px;text-align:center;
-  padding:24px 0;border-top:1px solid var(--line)}
+.item[id]{scroll-margin-top:18px}
+.item .h{font-family:var(--serif); font-weight:700; font-size:1.32rem; line-height:1.28}
+.item .h a{color:var(--head); text-decoration:none}
+.item .h a:hover{
+  text-decoration:underline; text-decoration-color:var(--accent);
+  text-decoration-thickness:0.45em; text-underline-offset:-0.18em;
+  text-decoration-skip-ink:none;
+}
+.item .m{
+  font-family:var(--mono); color:var(--muted);
+  font-size:.72rem; line-height:1.5; margin:7px 0 9px;
+}
+.item .b{font-family:var(--serif); font-size:1rem; line-height:1.55; color:var(--fg)}
+
+/* Sidebar */
+.side{font-family:var(--serif)}
+.side .si{margin-bottom:16px; line-height:1.32}
+.side .si .h{font-weight:700; font-size:1rem}
+.side .si .h a{color:var(--head); text-decoration:none}
+.side .si .h a:hover{
+  text-decoration:underline; text-decoration-color:var(--accent);
+  text-decoration-thickness:0.3em; text-underline-offset:-0.12em;
+  text-decoration-skip-ink:none;
+}
+.side .si .m{font-family:var(--mono); color:var(--muted); font-size:.68rem; margin-top:3px}
+.side .divider{border-top:1px solid var(--line); margin:22px 0}
+
+/* Jump nav — mirrors garrek.org nav (mono, blue, orange hover) */
+.side .jump a{
+  display:block; font-family:var(--mono); color:var(--nav);
+  font-size:.8rem; padding:4px 0; text-decoration:none;
+}
+.side .jump a:hover{
+  color:var(--accent); text-decoration:underline;
+  text-decoration-thickness:1px; text-underline-offset:0.15em;
+}
+
+/* Footer */
+.foot{
+  font-family:var(--mono); color:var(--faint); font-size:.72rem;
+  text-align:center; padding:26px 0; border-top:1px solid var(--line);
+}
+
 @media(max-width:720px){
-  .grid{grid-template-columns:1fr;gap:22px}
-  .side{border-top:1px solid var(--line);padding-top:18px}
+  body{font-size:16px}
+  .grid{grid-template-columns:1fr; gap:26px}
+  .side{border-top:1px solid var(--line); padding-top:22px}
 }
