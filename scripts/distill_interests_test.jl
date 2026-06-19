@@ -12,3 +12,21 @@ include(joinpath(@__DIR__, "distill_interests.jl"))
         "127f69b4e3b0315ae231525be9f24c31fff9d267a16d98a43d0a0721e61f9002"
     @test url_hash("https://example.com/a") == url_hash("HTTP://Example.com/a?b=1#frag")
 end
+
+@testset "read_links from fixture db (excludes deleted)" begin
+    db = tempname() * ".sqlite"
+    run(pipeline(`sqlite3 $db`, stdin = IOBuffer("""
+    CREATE TABLE link (url TEXT, title TEXT, author TEXT, starred BOOLEAN NOT NULL,
+                       readAt DOUBLE NOT NULL, deletedAt DOUBLE NOT NULL DEFAULT 0);
+    INSERT INTO link VALUES ('https://example.com/a','Alpha','',0,100.0,0);
+    INSERT INTO link VALUES ('https://www.example.org/b/','Bravo','',1,0.0,0);
+    INSERT INTO link VALUES ('http://test.com/c?x=1','Charlie','',0,200.0,0);
+    INSERT INTO link VALUES ('https://gone.com/x','Deleted','',0,300.0,5.0);
+    """)))
+    rows = read_links(db)
+    @test length(rows) == 3
+    @test Set(r.url for r in rows) ==
+        Set(["https://example.com/a","https://www.example.org/b/","http://test.com/c?x=1"])
+    @test any(r -> r.starred && r.title == "Bravo", rows)
+    rm(db, force = true)
+end
