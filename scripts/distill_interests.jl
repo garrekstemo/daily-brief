@@ -79,3 +79,33 @@ function update_toml(toml::AbstractString, titles)
     occursin(pat, toml) || error("exemplars markers not found in interests.toml")
     return replace(toml, pat => render_exemplars_block(titles))
 end
+
+function selftest()
+    cases = [
+        ("https://www.example.com/Foo/Bar/", "e54b9d6f8b4f9ceb3b709a2c5a0cd1da7d7057edb8ce04ea8f0f5fa02af61a31"),
+        ("HTTP://Example.com/a?b=1#frag",     "036cbe16b0015b0a30d733ca981c8ebb80535abe46b862bbb67d0affb9331be7"),
+        ("https://nautil.us/",                "c726d0edc78fe9aeaebc268a06469f3765ed845375543dbff8818ee55eeeeaf6"),
+        ("https://www.MarginalRevolution.com","127f69b4e3b0315ae231525be9f24c31fff9d267a16d98a43d0a0721e61f9002"),
+    ]
+    for (u, expected) in cases
+        got = url_hash(u)
+        got == expected || error("url_hash parity FAIL: $u -> $got (expected $expected)")
+    end
+end
+
+function main(; db = default_db(), repo = pwd())
+    selftest()
+    rows = read_links(db)
+    isempty(rows) && error("no links read from $db; refusing to overwrite ledger")
+    hash_text = render_hashes(rows)
+    write(joinpath(repo, "goodlinks-hashes.txt"), hash_text)
+    titles = pick_exemplars(rows)
+    toml_path = joinpath(repo, "interests.toml")
+    write(toml_path, update_toml(read(toml_path, String), titles))
+    nhash = length(split(chomp(hash_text), '\n'))
+    println("distilled $(length(rows)) links -> $nhash hashes, $(length(titles)) exemplars")
+end
+
+if abspath(PROGRAM_FILE) == @__FILE__
+    main()
+end

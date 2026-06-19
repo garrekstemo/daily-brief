@@ -6,7 +6,7 @@ articles (including beyond the usual sources) and ranks them against a taste pro
 
 - **Live page:** https://brief.garrek.org/
 - **How it works:** see `brief-routine.md` (cloud routine) and
-  `research-assistant/scripts/distill_interests.jl` (local taste refresh).
+  `scripts/distill_interests.jl` (local taste refresh).
 - **Edit your taste:** change `interests.toml` and commit.
 
 This repo contains only topic preferences and URL *hashes* — never a name-attached

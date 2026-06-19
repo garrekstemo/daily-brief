@@ -72,3 +72,7 @@ end
     @test !occursin("\"old\"", updated)
     @test occursin("# <<end:exemplars>>", updated)
 end
+
+@testset "selftest passes" begin
+    @test selftest() === nothing
+end
