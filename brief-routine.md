@@ -13,12 +13,21 @@ Today's date is the run date in **Asia/Tokyo**. Use ISO `YYYY-MM-DD` for filenam
 and a friendly `Weekday · D Month YYYY` for display.
 
 ## 1. Gather candidates
+The recency cutoff is `now − settings.recency_hours`, where `now` is the current instant
+in **Asia/Tokyo**; compare it against each item's publish time (normalize the feed's
+pubDate to UTC first) and keep items at or after the cutoff.
+
 - **RSS sweep:** for each watchlist entry with a non-empty `feed`, fetch it and keep
-  items published within `settings.recency_hours`.
+  items newer than the cutoff. A feed may error, 301-redirect, or have gone stale — skip
+  any feed that fails to fetch or whose newest item predates the cutoff. That is normal,
+  not a failure.
 - **Topical search:** for each `topic.hint` and each `curiosities` entry, run a
   recency-biased web search; collect promising results. This is where finds beyond the
   regular outlets come from.
 - Also do a light search across the `regulars` for on-topic pieces from the same window.
+  Several regulars are paywalled or block crawlers (FT, Economist, NYT, New Yorker,
+  Atlantic); if you cannot fetch one, skip it — a thin regulars pass is expected, not an
+  error.
 
 ## 2. De-duplicate
 Compute each candidate's hash with this exact algorithm (must match the Julia distill):
@@ -69,7 +78,8 @@ Start from `template.html`. Replace the four markers:
     <div class="b">One-sentence why-it-matters, from the fetched article.</div>
   </div>
   ```
-  Omit ` · AUTHOR` when unknown. Use a relative age ("6h ago", "1d ago").
+  Omit ` · AUTHOR` when unknown. Use a relative age ("6h ago", "1d ago") computed against
+  the same `now` (Asia/Tokyo) used for the recency cutoff in Step 1.
 
 - `<!--SIDEBAR_ITEMS-->` → one block per sidebar item (no blurb):
 
@@ -78,13 +88,24 @@ Start from `template.html`. Replace the four markers:
     <div class="m">SOURCE</div></div>
   ```
 
-- `<!--JUMP_LINKS-->` → one per topic that has ≥1 item, with its count, plus a
-  "Yesterday's brief" link to the previous edition file:
+- `<!--JUMP_LINKS-->` → jump links cover **main-column items only**. Emit one link per
+  topic that has ≥1 *main-column* item, showing that topic's main-column count and pointing
+  at its `id="topic-<id>"` anchor (Step 5 puts that anchor on the topic's first main item).
+  Sidebar items still carry a `topic.id` for bookkeeping but get no anchor and are not
+  counted. After the topic links, add a "previous edition" link:
 
   ```html
   <a href="#topic-science-ai">Science &amp; AI (7)</a>
-  <a href="/editions/YYYY-MM-DD.html">Yesterday's brief →</a>
+  <a href="/editions/<prev>.html">Previous brief →</a>
   ```
+
+  Compute `<prev>` from the filesystem, not by date arithmetic (thin/zero days are skipped,
+  so "today − 1 day" is often wrong): it is the greatest `editions/YYYY-MM-DD.html` whose
+  date is **strictly before today**. If no such file exists (the first real edition), omit
+  the "Previous brief" link entirely.
+
+  The template already hard-codes `<a href="/archive.html">Archive →</a>` immediately after
+  this marker — insert the JUMP_LINKS content *before* it; never duplicate or remove it.
 
 Escape `&`, `<`, `>` in all titles/blurbs (`&amp;`, `&lt;`, `&gt;`).
 
