@@ -1,7 +1,7 @@
 name: Auto-merge daily brief
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, synchronize, ready_for_review]
 
 # The scheduled cloud routine can't push to main directly; it pushes to a
 # claude/* branch and opens a PR. This closes the loop: merge that PR so
@@ -16,13 +16,20 @@ jobs:
     if: startsWith(github.head_ref, 'claude/')
     runs-on: ubuntu-latest
     steps:
+      - name: Mark ready for review
+        # The cloud routine opens its PR as a draft; drafts can't be merged.
+        # (gh pr ready via GITHUB_TOKEN does not re-trigger this workflow.)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+        run: gh pr ready "$PR" --repo "$GITHUB_REPOSITORY" || true
       - name: Merge the brief PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR: ${{ github.event.pull_request.number }}
         run: |
-          # GitHub computes mergeability asynchronously after a PR opens;
-          # retry so a freshly opened PR isn't rejected as "not mergeable yet".
+          # GitHub computes mergeability asynchronously; retry so a
+          # just-readied PR isn't briefly rejected as "not mergeable yet".
           for i in 1 2 3 4 5; do
             if gh pr merge "$PR" --repo "$GITHUB_REPOSITORY" --merge --delete-branch; then
               exit 0

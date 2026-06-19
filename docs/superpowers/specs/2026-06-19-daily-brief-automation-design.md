@@ -240,3 +240,10 @@ token can merge.
 **Trade-off (accepted):** fully hands-off means the routine's output publishes unreviewed.
 Mitigated by the existing no-fabrication rule (Step 3) and thin/empty-day safety (Step 7);
 the `claude/*` guard keeps the auto-merge scoped to routine PRs only.
+
+**Follow-up (same day): the routine opens its PR as a _draft_.** The first auto-merge run
+(PR #2) failed every retry with `GraphQL: Pull Request is still a draft` — the cloud
+harness opens the routine's PR in draft state and does not mark it ready. Two fixes:
+(1) the workflow now runs `gh pr ready` before merging; (2) `ready_for_review` was added to
+the trigger types as a safety net (e.g. if a human marks it ready). `gh pr ready` performed
+with `GITHUB_TOKEN` does not itself re-trigger the workflow, so there is no recursion.
