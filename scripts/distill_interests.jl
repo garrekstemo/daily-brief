@@ -30,9 +30,10 @@ function read_links(db_path::AbstractString)
     for line in split(chomp(out), '\n')
         isempty(line) && continue
         c = split(line, '\t')
-        length(c) < 5 && continue
+        length(c) != 5 && continue
         push!(rows, (url = String(c[1]), title = String(c[2]), author = String(c[3]),
-                     starred = c[4] == "1", readAt = parse(Float64, c[5])))
+                     starred = c[4] == "1",
+                     readAt = something(tryparse(Float64, c[5]), 0.0)))
     end
     return rows
 end
@@ -49,6 +50,7 @@ function pick_exemplars(rows; limit::Int = 8)
     for r in ordered
         t = strip(r.title)
         isempty(t) && continue
+        occursin("<<end:exemplars>>", t) && continue
         String(t) in chosen && continue
         push!(chosen, String(t))
         length(chosen) >= limit && break
