@@ -204,3 +204,39 @@ self-tests pass, and re-running is a no-op on unchanged data.
 2. Hosting (something to look at; DNS has external latency, start early) →
 3. Schedule (depends on a trustworthy routine) →
 4. distill_interests.jl (independent; supports long-term quality).
+
+---
+
+## Amendment — 2026-06-20: close the publish loop (auto-merge)
+
+The spec flagged a dependency to verify at the first real run: *"the cloud routine
+environment must ... be able to `git push` to this repo."* The first scheduled run
+(2026-06-20) settled it: the routine **cannot** push to `main`. Generation worked end to
+end (RSS sweep, fetch-verify, score, render were all correct), but instead of `git push`
+landing on `main`, the cloud environment pushed to a `claude/*` branch and opened a PR
+(`#1`). GitHub Pages deploys from `main` only, so the PR sat unmerged and the live page
+never updated.
+
+The spec's named fallback — rebuild generation as a scheduled GitHub Action against the
+Claude API — is **not** taken, because it solves a problem we don't have: generation is
+fine; only the final publish hop is missing.
+
+**Decision:** keep the cloud routine exactly as-is and close the loop inside the repo with
+a GitHub Actions workflow (`.github/workflows/auto-merge-brief.yml`) that auto-merges the
+routine's daily PR:
+
+- Trigger: `pull_request` (`opened`/`reopened`/`synchronize`), guarded by
+  `startsWith(github.head_ref, 'claude/')` so only routine branches auto-merge.
+- Merge with the built-in `GITHUB_TOKEN` (`gh pr merge --merge --delete-branch`); a short
+  retry absorbs GitHub's asynchronous mergeability computation. No PAT, no secrets.
+- After merge, explicitly `POST /repos/{repo}/pages/builds` — insurance against the
+  "events from `GITHUB_TOKEN` don't re-trigger automation" caveat for the legacy Pages
+  build.
+
+**Prerequisite (one-time):** the repo's default workflow token permission was `read`; set
+to `write` (`actions/permissions/workflow`, `default_workflow_permissions=write`) so the
+token can merge.
+
+**Trade-off (accepted):** fully hands-off means the routine's output publishes unreviewed.
+Mitigated by the existing no-fabrication rule (Step 3) and thin/empty-day safety (Step 7);
+the `claude/*` guard keeps the auto-merge scoped to routine PRs only.

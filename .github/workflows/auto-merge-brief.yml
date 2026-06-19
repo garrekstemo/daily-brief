@@ -1,0 +1,36 @@
+name: Auto-merge daily brief
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+# The scheduled cloud routine can't push to main directly; it pushes to a
+# claude/* branch and opens a PR. This closes the loop: merge that PR so
+# GitHub Pages (deploy-from-main) redeploys brief.garrek.org.
+permissions:
+  contents: write
+  pull-requests: write
+  pages: write
+
+jobs:
+  automerge:
+    if: startsWith(github.head_ref, 'claude/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge the brief PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          # GitHub computes mergeability asynchronously after a PR opens;
+          # retry so a freshly opened PR isn't rejected as "not mergeable yet".
+          for i in 1 2 3 4 5; do
+            if gh pr merge "$PR" --repo "$GITHUB_REPOSITORY" --merge --delete-branch; then
+              exit 0
+            fi
+            echo "Not mergeable yet (attempt $i); waiting..."; sleep 10
+          done
+          echo "::error::Could not merge PR #$PR after retries"; exit 1
+      - name: Force a Pages rebuild (insurance)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
