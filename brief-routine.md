@@ -1,11 +1,19 @@
 # Daily Brief — Routine Instructions
 
-You are generating today's edition of the Daily Brief. You have this repo and web
-access (search + fetch). Work entirely within this repo. Follow these steps exactly.
+You are updating the Daily Brief. It is a **rolling front page**, not a fresh daily
+snapshot: each run *adds* the day's new finds to the top and lets older items *age off the
+bottom* after `settings.display_window_days`. A quiet morning means fewer new items pushed
+in — never a blank page. You have this repo and web access (search + fetch). Work entirely
+within this repo. Follow these steps exactly.
 
 ## 0. Inputs
 - `interests.toml` — settings, topics (with `id`/`label`/`hint`), curiosities,
   regulars, watchlist (RSS feeds), exemplars.
+- `current.json` — **the rolling page state**: the items currently displayed. Each item
+  has `url`, `hash`, `title`, `source`, `author`, `date` (article publish date, drives the
+  displayed age), `topic`, `column` (`main`/`sidebar`), `score`, `added` (the run date it
+  first appeared, drives aging), and `blurb` (main items only). This is the source of truth
+  for what the page shows — do not hand-edit; the routine rewrites it each run.
 - `goodlinks-hashes.txt` and `published-hashes.txt` — URL hashes already seen.
 - `template.html` — the edition skeleton. `assets/brief.css` — styling.
 
@@ -46,30 +54,46 @@ def url_hash(u):
 ```
 
 Drop any candidate whose hash is in `goodlinks-hashes.txt`, in `published-hashes.txt`,
-or in an edition from the last `settings.dedup_window_days` days (`editions/`).
+already present in `current.json` (it's still on the page), or in an edition from the last
+`settings.dedup_window_days` days (`editions/`). What survives is the **new** items only.
 
 ## 3. Verify + score (NO hallucination)
-For each surviving candidate you intend to include, you MUST have actually fetched its
-page. Confirm the URL resolves (no 404) and read enough to write an honest blurb.
+For each new candidate you intend to include, you MUST have actually fetched its page.
+Confirm the URL resolves (no 404) and read enough to write an honest blurb.
 **Never invent a title, source, author, date, or blurb.** If a fetch fails, drop it.
 
-Score each item 0–1 for relevance to `topics` + `exemplars`. Separately note items
-that are only partial matches, plus a few strong `curiosities`/generally-notable pieces.
+Score each new item 0–1 for relevance to `topics` + `exemplars`. (Carried-forward items
+keep the score already stored in `current.json` — do not re-score them.)
 
-## 4. Route
-- score ≥ `settings.min_main_score` → **main column**, ordered by score (desc).
-- partial match, or strong curiosity/notable → **sidebar list**.
-- otherwise drop.
-- Respect `settings.volume_target` as a soft cap on the main column. If few items
-  clear the bar, the main column is simply shorter — **do not pad or fabricate.**
-- Assign each item exactly one `topic.id` (its best fit) for jump anchors + counts.
+## 4. Merge into the rolling page
+Build the new page state from `current.json` plus today's new items:
+
+1. **Load** `current.json` (its `items` list). If the file is missing, start from an empty
+   list.
+2. **Age out:** drop every existing item whose age exceeds the window —
+   `today − item.added > settings.display_window_days` days. (Aged-out items stay in
+   `published-hashes.txt`, so they never come back.)
+3. **Add new:** for each new item from Step 3, build a record:
+   - `column` = `main` if `score ≥ settings.min_main_score`, else `sidebar`.
+   - `topic` = its single best-fit `topic.id`.
+   - `added` = today; `date` = the article's publish date; `blurb` = the honest one-liner
+     (main items only); plus `url`/`hash`/`title`/`source`/`author`/`score`.
+   - Append it to the list.
+4. **Apply soft caps.** If `main` items exceed `settings.volume_target`, or `sidebar` items
+   exceed `settings.sidebar_target`, drop the lowest-scoring items in that column until
+   within the cap (break ties by oldest `added`). Dropped-by-cap items also stay in
+   `published-hashes.txt` and do not return. **Never pad or fabricate to reach a cap** —
+   the caps are ceilings, not quotas.
+
+The resulting list is the new rolling set, used by Steps 5–6.
 
 ## 5. Build the HTML
-Start from `template.html`. Replace the four markers:
+Start from `template.html`. Replace the four markers, drawing from the **rolling set**:
 
 - `<!--DATE-->` → the friendly date (every occurrence).
-- `<!--MAIN_ITEMS-->` → one block per main item, in order. For the FIRST item of each
-  topic, add `id="topic-<topic.id>"` to its `<div class="item">` so jump links land:
+- `<!--MAIN_ITEMS-->` → the `main`-column items, **grouped by topic** in `interests.toml`
+  topic order; within each topic, ordered by `score` desc. The FIRST item of each topic
+  group gets `id="topic-<topic.id>"` so jump links land:
 
   ```html
   <div class="item" id="topic-science-ai">
@@ -78,10 +102,11 @@ Start from `template.html`. Replace the four markers:
     <div class="b">One-sentence why-it-matters, from the fetched article.</div>
   </div>
   ```
-  Omit ` · AUTHOR` when unknown. Use a relative age ("6h ago", "1d ago") computed against
-  the same `now` (Asia/Tokyo) used for the recency cutoff in Step 1.
+  Omit ` · AUTHOR` when unknown. Compute the relative age ("6h ago", "1d ago", "5d ago")
+  from the item's `date` against `now` (Asia/Tokyo) — so carried-forward items age each day.
 
-- `<!--SIDEBAR_ITEMS-->` → one block per sidebar item (no blurb):
+- `<!--SIDEBAR_ITEMS-->` → the `sidebar` items, newest first (by `added` desc, then `score`
+  desc), no blurb:
 
   ```html
   <div class="si"><div class="h"><a href="ARTICLE_URL">HEADLINE</a></div>
@@ -90,9 +115,9 @@ Start from `template.html`. Replace the four markers:
 
 - `<!--JUMP_LINKS-->` → jump links cover **main-column items only**. Emit one link per
   topic that has ≥1 *main-column* item, showing that topic's main-column count and pointing
-  at its `id="topic-<id>"` anchor (Step 5 puts that anchor on the topic's first main item).
-  Sidebar items still carry a `topic.id` for bookkeeping but get no anchor and are not
-  counted. After the topic links, add a "previous edition" link:
+  at its `id="topic-<id>"` anchor. Sidebar items still carry a `topic.id` for bookkeeping
+  but get no anchor and are not counted. After the topic links, add a "previous edition"
+  link:
 
   ```html
   <a href="#topic-science-ai">Science &amp; AI (7)</a>
@@ -114,13 +139,23 @@ Escape `&`, `<`, `>` in all titles/blurbs (`&amp;`, `&lt;`, `&gt;`).
 2. Copy the same HTML to `index.html` (root).
 3. Prepend a link to `archive.html` (create it from minimal HTML if it doesn't exist):
    `<a href="/editions/<today>.html">Weekday · D Month YYYY</a><br>`.
-4. Append every published item's hash (main + sidebar) to `published-hashes.txt`.
-5. Commit and push:
+4. **Write the new rolling set to `current.json`** (set `updated` to today). This is what
+   the next run carries forward.
+5. Append each **newly added** item's hash (the ones from Step 3, main + sidebar) to
+   `published-hashes.txt`. Do not re-append carried-forward items — they are already there.
+6. Commit and push:
    ```bash
    git add -A && git commit -m "Daily Brief — <today>" && git push
    ```
 
-## 7. Failure safety
-If Step 1 yields zero usable items (e.g. all feeds error), do **not** overwrite
-`index.html`. Leave yesterday's edition in place, write nothing, and stop. Never
-publish fabricated content to fill a thin day.
+## 7. Quiet days & failure safety
+- A day with **zero new items** is normal. Still run Step 4's age-out and re-render, so
+  stale items fall off and the dates stay current — the page just carries forward with
+  fewer (or no) additions. This is the whole point of the rolling model: never a blank
+  main column on a slow news day.
+- Only if the rolling set is **completely empty** after the merge (a true cold start with
+  nothing to show) do you skip publishing: leave the existing `index.html` in place, write
+  nothing, and stop.
+- If Step 1 wholly fails (e.g. every feed errors and search is unreachable), do **not**
+  rewrite the page from a broken read — leave the previous edition in place and stop.
+- Never publish fabricated content to fill a thin day.

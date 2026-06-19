@@ -1,7 +1,9 @@
 [settings]
-volume_target   = 20      # approx items per edition (soft cap)
+volume_target   = 20      # soft cap on MAIN-column items on the rolling page
+sidebar_target  = 12      # soft cap on sidebar items on the rolling page
 min_main_score  = 0.6     # relevance >= this -> main column, else sidebar
-recency_hours   = 48      # how fresh an item must be to qualify
+recency_hours   = 48      # how fresh an item must be to be picked up as NEW
+display_window_days = 7   # how long an item stays on the page after it first appears
 dedup_window_days = 14    # also dedup against this many days of prior editions
 
 # Strong-match topics -> main column. id is used for routing + jump anchors.
