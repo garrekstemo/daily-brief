@@ -131,7 +131,7 @@ Start from `template.html`. Replace the four markers, drawing from the **rolling
   <div class="item" id="topic-science-ai">
     <div class="h"><a href="ARTICLE_URL">HEADLINE</a></div>
     <div class="m">SOURCE · AUTHOR · 6h ago</div>
-    <div class="b">One-sentence why-it-matters, from the fetched article.</div>
+    <div class="b">One-sentence why-it-matters, from the fetched article or feed summary.</div>
   </div>
   ```
   Omit ` · AUTHOR` when unknown. Compute the relative age ("6h ago", "1d ago", "5d ago")
