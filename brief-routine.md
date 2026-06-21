@@ -44,10 +44,13 @@ The recency cutoff is `now − settings.recency_hours`, where `now` is the curre
 in **Asia/Tokyo**; compare it against each item's publish time (normalize the feed's
 pubDate to UTC first) and keep items at or after the cutoff.
 
-- **RSS sweep:** for each watchlist entry with a non-empty `feed`, fetch it and keep
-  items newer than the cutoff. A feed may error, 301-redirect, or have gone stale — skip
-  any feed that fails to fetch or whose newest item predates the cutoff. That is normal,
-  not a failure.
+- **RSS sweep:** for each watchlist entry with a non-empty `feed`, fetch it **using the
+  Fetching rule above (direct first, then the `r.jina.ai` proxy)** and keep items newer
+  than the cutoff. A feed may error, 301-redirect, or have gone stale — skip any feed that
+  fails both direct and proxy, or whose newest item predates the cutoff. That is normal,
+  not a failure. When you read a feed through the proxy, take each item's real link, title,
+  and date from the feed entry; if the proxy mangles an item's URL, fall back to a search
+  for that specific title rather than guessing the URL.
 - **Topical search:** for each `topic.hint` and each `curiosities` entry, run a
   recency-biased web search; collect promising results. This is where finds beyond the
   regular outlets come from.
