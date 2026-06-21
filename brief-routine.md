@@ -6,6 +6,25 @@ bottom* after `settings.display_window_days`. A quiet morning means fewer new it
 in — never a blank page. You have this repo and web access (search + fetch). Work entirely
 within this repo. Follow these steps exactly.
 
+## Fetching (applies to every fetch below)
+Claude's cloud egress IP is blocked (HTTP 403) by many publishers — Cloudflare-fronted
+Substacks, Marginal Revolution, and others — for **both** their feed XML and their article
+pages. Web *search* is not blocked; only fetch is. So whenever a step says to "fetch" a URL,
+use this rule:
+
+1. **Try the URL directly first.**
+2. **If the direct fetch fails** (403, empty, or obviously blocked), **retry through the
+   reader proxy:** fetch `https://r.jina.ai/<the-original-url>` instead. The proxy fetches
+   the target from an unblocked IP and returns clean text. Example: to read
+   `https://www.noahpinion.blog/feed`, fetch
+   `https://r.jina.ai/https://www.noahpinion.blog/feed`.
+3. **If both the direct fetch and the proxy fail,** treat it as a failed fetch and follow
+   that step's normal skip/drop rule.
+
+Only sources the direct fetch couldn't reach hit the proxy, so its keyless rate limit is
+rarely a concern. **In your run summary, note which sources needed the proxy and which
+failed both ways** — so a future change in the block is visible, not silent.
+
 ## 0. Inputs
 - `interests.toml` — settings, topics (with `id`/`label`/`hint`), curiosities,
   regulars, watchlist (RSS feeds), exemplars.
