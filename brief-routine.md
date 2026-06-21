@@ -80,9 +80,19 @@ already present in `current.json` (it's still on the page), or in an edition fro
 `settings.dedup_window_days` days (`editions/`). What survives is the **new** items only.
 
 ## 3. Verify + score (NO hallucination)
-For each new candidate you intend to include, you MUST have actually fetched its page.
-Confirm the URL resolves (no 404) and read enough to write an honest blurb.
-**Never invent a title, source, author, date, or blurb.** If a fetch fails, drop it.
+Every item you include must trace to content you actually fetched — **never invent a
+title, source, author, date, or blurb.** How you satisfy that depends on where the
+candidate came from:
+
+- **Feed-sourced items (from the Step 1 RSS sweep):** the feed entry you already fetched
+  carries the publisher's own title, author, date, and summary/description. That **is** the
+  verification — write the blurb from the feed's summary. You do **not** need a separate
+  article-page fetch. (You may fetch the page via the Fetching rule for a richer blurb, but
+  a blocked article page is fine here — the feed entry already verified the item.)
+- **Search-discovered items (no feed behind them):** you MUST fetch the page — **using the
+  Fetching rule above (direct first, then the `r.jina.ai` proxy)** — confirm the URL
+  resolves (no 404), and read enough to write an honest blurb. If both the direct fetch and
+  the proxy fail, **drop it.**
 
 Score each new item 0–1 for relevance to `topics` + `exemplars`. (Carried-forward items
 keep the score already stored in `current.json` — do not re-score them.)
