@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22",
+  "updated": "2026-06-23",
   "items": [
     {
       "url": "https://www.chinatalk.media/p/will-the-match-act-change-chip-controls",
@@ -301,19 +301,6 @@
       "blurb": "Three recent studies suggest the Shingrix vaccine cuts dementia risk by roughly 20 percent, possibly by blocking the varicella zoster virus."
     },
     {
-      "url": "https://worksinprogress.co/issue/the-wonder-of-epidurals/",
-      "hash": "3812d4cfb62829d01a2483d239f1d9247b7815e1a5cfd57e9c771ee91472bf09",
-      "title": "The wonder of epidurals",
-      "source": "Works in Progress",
-      "author": "Phoebe Arslanagic-Little",
-      "date": "2026-06-18",
-      "topic": "science-ai",
-      "column": "main",
-      "score": 0.62,
-      "added": "2026-06-19",
-      "blurb": "Epidural anesthesia safely removes most childbirth pain while keeping mothers alert, yet access remains unevenly distributed between wealthy and developing nations."
-    },
-    {
       "url": "https://www.quantamagazine.org/seven-perfect-shuffles-randomize-a-deck-of-cards-but-how-many-sloppy-ones-20260617/",
       "hash": "a0a3809fd61c1aecdf1547ef82e753dabd6937aa2f3ac07b4e29b61e925022de",
       "title": "Seven Perfect Shuffles Randomize a Deck of Cards. But How Many Sloppy Ones?",
@@ -516,6 +503,31 @@
       "column": "sidebar",
       "score": 0.5,
       "added": "2026-06-22"
+    },
+    {
+      "url": "https://cepr.org/voxeu/columns/europes-ungoverned-space-military-ai-and-autonomy-cannot-be-bought",
+      "hash": "8d15e33cb59ce7c0ab3e712c756ce243b17b7deb46b8735d8915de3f09ec29ae",
+      "title": "Europe’s ungoverned space: Military AI and the autonomy that cannot be bought",
+      "source": "VoxEU / CEPR",
+      "author": "",
+      "date": "2026-06-22",
+      "topic": "geopolitics",
+      "column": "main",
+      "score": 0.75,
+      "added": "2026-06-23",
+      "blurb": "European defence ministries run on AI infrastructure they do not control or audit; after the US ordered Anthropic to cut off non-US access in June 2026, the column argues Europe faces a sovereignty gap that will take ten to fifteen years to close and outlines three interim steps."
+    },
+    {
+      "url": "https://www.quantamagazine.org/a-dark-dimension-could-link-two-of-the-universes-great-unknowns-20260622/",
+      "hash": "2ec57ee3d0dde11ccd2287de7164356b4b9bcbb0601e6f84c49a702de7b17128",
+      "title": "A Dark Dimension Could Link Two of the Universe’s Great Unknowns",
+      "source": "Quanta Magazine",
+      "author": "Steve Nadis",
+      "date": "2026-06-22",
+      "topic": "science-ai",
+      "column": "sidebar",
+      "score": 0.42,
+      "added": "2026-06-23"
     }
   ]
 }
