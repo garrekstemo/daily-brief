@@ -124,7 +124,9 @@ Start from `template.html`. Replace the four markers, drawing from the **rolling
 
 - `<!--DATE-->` → the friendly date (every occurrence).
 - `<!--MAIN_ITEMS-->` → the `main`-column items, **grouped by topic** in `interests.toml`
-  topic order; within each topic, ordered by `score` desc. The FIRST item of each topic
+  topic order; within each topic, ordered by `added` desc then `score` desc (so the
+  most-recently-added items rise to the top of their section, and score breaks ties within
+  the same run). The FIRST item of each topic
   group gets `id="topic-<topic.id>"` so jump links land:
 
   ```html
