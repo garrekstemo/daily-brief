@@ -52,6 +52,7 @@ log "claude: starting ($MODE)"
 if claude -p "$PROMPT" --dangerously-skip-permissions; then
   log "=== run done (mode=$MODE) ==="
   [[ "$MODE" == "preview" ]] && notify "Preview ready: editions/_preview.html"
+  exit 0
 else
   rc=$?
   fail "claude exited $rc - see $LOGDIR/$DATE.log"
