@@ -27,7 +27,7 @@ failed both ways** — so a future change in the block is visible, not silent.
 
 ## 0. Inputs
 - `interests.toml` — settings, topics (with `id`/`label`/`hint`), curiosities,
-  regulars, watchlist (RSS feeds), exemplars.
+  regulars (core outlets, each with an RSS `feed`), watchlist (RSS feeds), exemplars.
 - `current.json` — **the rolling page state**: the items currently displayed. Each item
   has `url`, `hash`, `title`, `source`, `author`, `date` (article publish date, drives the
   displayed age), `topic`, `column` (`main`/`sidebar`), `score`, `added` (the run date it
@@ -44,9 +44,9 @@ The recency cutoff is `now − settings.recency_hours`, where `now` is the curre
 in **Asia/Tokyo**; compare it against each item's publish time (normalize the feed's
 pubDate to UTC first) and keep items at or after the cutoff.
 
-- **RSS sweep:** for each watchlist entry with a non-empty `feed`, fetch it **using the
-  Fetching rule above (direct first, then the `r.jina.ai` proxy)** and keep items newer
-  than the cutoff. A feed may error, 301-redirect, or have gone stale — skip any feed that
+- **RSS sweep:** for each `regular` and each `watchlist` entry with a non-empty `feed`,
+  fetch it **using the Fetching rule above (direct first, then the `r.jina.ai` proxy)** and
+  keep items newer than the cutoff. A feed may error, 301-redirect, or have gone stale — skip any feed that
   fails both direct and proxy, or whose newest item predates the cutoff. That is normal,
   not a failure. When you read a feed through the proxy, take each item's real link, title,
   and date from the feed entry; if the proxy mangles an item's URL, fall back to a search
@@ -54,10 +54,13 @@ pubDate to UTC first) and keep items at or after the cutoff.
 - **Topical search:** for each `topic.hint` and each `curiosities` entry, run a
   recency-biased web search; collect promising results. This is where finds beyond the
   regular outlets come from.
-- Also do a light search across the `regulars` for on-topic pieces from the same window.
-  Several regulars are paywalled or block crawlers (FT, Economist, NYT, New Yorker,
-  Atlantic); if you cannot fetch one, skip it — a thin regulars pass is expected, not an
-  error.
+- Regulars are now swept by their `feed` in the RSS sweep above — that is their primary
+  path, and it sidesteps the paywall/crawler block. Items reached this way are verified by
+  the feed entry (Step 3), so they need no article fetch even when the page is paywalled.
+  As a *supplement*, you may run a light topical search across the `regulars` for on-topic
+  pieces missing from a feed; several are paywalled or block crawlers (FT, Economist, NYT,
+  New Yorker, Atlantic), so if a search fetch fails, skip it — a thin supplemental pass is
+  expected, not an error.
 
 ## 2. De-duplicate
 Compute each candidate's hash with this exact algorithm (must match the Julia distill):
