@@ -13,17 +13,28 @@ pages. Web *search* is not blocked; only fetch is. So whenever a step says to "f
 use this rule:
 
 1. **Try the URL directly first.**
-2. **If the direct fetch fails** (403, empty, or obviously blocked), **retry through the
-   reader proxy:** fetch `https://r.jina.ai/<the-original-url>` instead. The proxy fetches
-   the target from an unblocked IP and returns clean text. Example: to read
-   `https://www.noahpinion.blog/feed`, fetch
-   `https://r.jina.ai/https://www.noahpinion.blog/feed`.
-3. **If both the direct fetch and the proxy fail,** treat it as a failed fetch and follow
+2. **If the direct fetch fails** (403, empty, or obviously blocked), **retry the direct
+   fetch with a real browser User-Agent via `curl`.** Many publishers — notably FT, The
+   Economist, NYT, and Foreign Affairs — 403 the default fetch agent but serve a normal
+   browser UA, returning the real feed XML:
+   ```
+   curl -sSL --max-time 25 \
+     -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17 Safari/605.1.15' \
+     '<the-original-url>'
+   ```
+3. **If the browser-UA fetch also fails, retry through the reader proxy:** fetch
+   `https://r.jina.ai/<the-original-url>` instead. The proxy fetches the target from an
+   unblocked IP and returns clean text. Example: to read `https://www.noahpinion.blog/feed`,
+   fetch `https://r.jina.ai/https://www.noahpinion.blog/feed`. **Caveat: the proxy mangles
+   some feeds — notably FT, whose entries come back as title-less `ft.com/content/<uuid>`
+   links. If the proxy output has no usable titles/links, treat the fetch as failed rather
+   than guessing URLs** (so FT in practice must be reached by the browser-UA fetch in step 2).
+4. **If direct, browser-UA, and proxy all fail,** treat it as a failed fetch and follow
    that step's normal skip/drop rule.
 
-Only sources the direct fetch couldn't reach hit the proxy, so its keyless rate limit is
-rarely a concern. **In your run summary, note which sources needed the proxy and which
-failed both ways** — so a future change in the block is visible, not silent.
+Prefer the earliest method that works; fall onward only when one fails. **In your run
+summary, note which sources needed the browser-UA fetch, which needed the proxy, and which
+failed all ways** — so a future change in the block is visible, not silent.
 
 ## 0. Inputs
 - `interests.toml` — settings, topics (with `id`/`label`/`hint`), curiosities,
