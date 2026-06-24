@@ -30,11 +30,43 @@ curiosities = [
   "technology and society essays",
 ]
 
-# Regular sources: included if relevant, but NOT treated as novel finds.
-regulars = [
-  "ft.com","economist.com","theatlantic.com","nytimes.com",
-  "newyorker.com","foreignaffairs.com","nature.com","scientificamerican.com",
-]
+# Regular sources: your trusted core outlets. Each is swept via its RSS `feed` (reliable —
+# bypasses the paywall/crawler block that makes the plain search path drop them), then kept
+# only when on-topic. Unlike the watchlist, regulars are NOT surfaced as novel "finds".
+# `domain` preserves source identity for dedup + the supplemental topical search.
+# Every feed below returned HTTP 200 + populated RSS when added (2026-06-24).
+[[regular]]
+name   = "Financial Times"
+domain = "ft.com"
+feed   = "https://www.ft.com/rss/home"
+[[regular]]
+name   = "The Economist"
+domain = "economist.com"
+feed   = "https://www.economist.com/latest/rss.xml"
+[[regular]]
+name   = "The Atlantic"
+domain = "theatlantic.com"
+feed   = "https://www.theatlantic.com/feed/all/"
+[[regular]]
+name   = "The New York Times"
+domain = "nytimes.com"
+feed   = "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+[[regular]]
+name   = "The New Yorker"
+domain = "newyorker.com"
+feed   = "https://www.newyorker.com/feed/everything"
+[[regular]]
+name   = "Foreign Affairs"
+domain = "foreignaffairs.com"
+feed   = "https://www.foreignaffairs.com/rss.xml"
+[[regular]]
+name   = "Nature"
+domain = "nature.com"
+feed   = "https://www.nature.com/nature.rss"
+[[regular]]
+name   = "Scientific American"
+domain = "scientificamerican.com"
+feed   = "https://www.scientificamerican.com/platform/syndication/rss/"
 
 # Sources to actively sweep beyond the regulars (the serendipity engine).
 # feed = "" means "no working RSS — reach via topical search only".
