@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24",
+  "updated": "2026-06-25",
   "items": [
     {
       "url": "https://worksinprogress.co/issue/why-american-data-centers-cant-plug-in/",
@@ -145,32 +145,6 @@
       "blurb": "From energy grids to language performance, emerging economies are exposing the limits of a one-size-fits-all American AI strategy as it expands globally, the author argues."
     },
     {
-      "url": "https://www.cnbc.com/2026/06/22/china-trade-curbs-us-companies-export-controls-procurement-exclusion-pentagon-list-.html",
-      "hash": "21db397179e5fbb7d8ad1c86682a11bae63232d6f21e6001214b99aece30e267",
-      "title": "China imposes trade curbs on dozens of U.S. firms in retaliation for Pentagon blacklist",
-      "source": "CNBC",
-      "author": "Anniek Bao",
-      "date": "2026-06-22",
-      "topic": "geopolitics",
-      "column": "main",
-      "score": 0.72,
-      "added": "2026-06-24",
-      "blurb": "After the Pentagon added Chinese tech firms to its military-linked list, Beijing put 10 US suppliers on its export-control list and barred 46 defense contractors from procurement—steps analysts read as largely symbolic."
-    },
-    {
-      "url": "https://www.foreignaffairs.com/china/mirage-chinas-military-edge-dennis-blair",
-      "hash": "edfbfeddd140643aa9d07051001b35f417de2b02864239116b546496d378e0c9",
-      "title": "The Mirage of China’s Military Edge",
-      "source": "Foreign Affairs",
-      "author": "Dennis Blair",
-      "date": "2026-06-23",
-      "topic": "geopolitics",
-      "column": "main",
-      "score": 0.72,
-      "added": "2026-06-24",
-      "blurb": "A former US intelligence chief argues that alarm over China's military and technological rise is overblown and that panic itself is counterproductive to American strategy."
-    },
-    {
       "url": "https://cepr.org/voxeu/columns/europes-ungoverned-space-military-ai-and-autonomy-cannot-be-bought",
       "hash": "8d15e33cb59ce7c0ab3e712c756ce243b17b7deb46b8735d8915de3f09ec29ae",
       "title": "Europe’s ungoverned space: Military AI and the autonomy that cannot be bought",
@@ -195,19 +169,6 @@
       "score": 0.82,
       "added": "2026-06-22",
       "blurb": "Studying over 100,000 GitHub developers, the paper finds AI coding agents raise commits by up to 180% but only 30% more shipped releases—the gap reflects human bottlenecks further down the production chain, consistent with the weak-link hypothesis."
-    },
-    {
-      "url": "https://www.noahpinion.blog/p/what-defines-japans-national-identity",
-      "hash": "3354fb3564f7b2e75b9c12eeef999c939623342fb257747d29caa170e27ceae9",
-      "title": "What defines Japan’s national identity?",
-      "source": "Noahpinion",
-      "author": "Hiroko Yoda",
-      "date": "2026-06-20",
-      "topic": "demographics",
-      "column": "main",
-      "score": 0.72,
-      "added": "2026-06-22",
-      "blurb": "As Japan's birth rate falls and mass immigration accelerates, guest essayist Hiroko Yoda argues that Japan’s identity rests on shared culture rather than ethnicity—and examines how a far-right backlash is beginning to test that idea."
     },
     {
       "url": "https://www.chinatalk.media/p/will-the-match-act-change-chip-controls",
@@ -299,19 +260,6 @@
       "score": 0.78,
       "added": "2026-06-19",
       "blurb": "As Boomers retire and birth rates fall, US labor-force growth slows toward zero in the 2030s-40s, which Taylor argues should push up wages for young workers entering the market."
-    },
-    {
-      "url": "https://www.slowboring.com/p/congress-cuts-a-deal-on-the-21st",
-      "hash": "48c685a678f5c89808eef42be4413493d3f12ed982df6b13aca2908c59bd81d7",
-      "title": "Congress cuts a deal on the 21st Century ROAD to Housing Act",
-      "source": "Slow Boring",
-      "author": "Halina Bennet",
-      "date": "2026-06-17",
-      "topic": "progress-econ",
-      "column": "main",
-      "score": 0.74,
-      "added": "2026-06-19",
-      "blurb": "Lawmakers reach a bicameral agreement on housing legislation even as housing starts decline and homeownership slips in parts of the country."
     },
     {
       "url": "https://www.foreignaffairs.com/united-states/survive-artificial-intelligence-shock-davidson-slaughter",
@@ -434,30 +382,6 @@
       "added": "2026-06-24"
     },
     {
-      "url": "https://www.theatlantic.com/ideas/2026/06/spacex-ipo-tech-companies/687659/",
-      "hash": "6acb272eb3ac1756e2ba85f550b304212e417aab1dd5b5866adbb8a4561407ad",
-      "title": "SpaceX Just Needs the Money",
-      "source": "The Atlantic",
-      "author": "James Surowiecki",
-      "date": "2026-06-23",
-      "topic": "progress-econ",
-      "column": "sidebar",
-      "score": 0.5,
-      "added": "2026-06-24"
-    },
-    {
-      "url": "https://marginalrevolution.com/marginalrevolution/2026/06/music-markets-remain-deglobalized.html",
-      "hash": "c8967d219485eba81da0061798eedb091b1eddd9aadae53e30d0903016bfa9f8",
-      "title": "Music Markets Remain Deglobalized",
-      "source": "Marginal Revolution",
-      "author": "Tyler Cowen",
-      "date": "2026-06-21",
-      "topic": "geopolitics",
-      "column": "sidebar",
-      "score": 0.5,
-      "added": "2026-06-22"
-    },
-    {
       "url": "https://www.noemamag.com/the-mars-delusion/",
       "hash": "f733c4245f934d51d1911f13cf24a1357d6dec20003982c5902bf9b8360e97fc",
       "title": "The Mars Delusion",
@@ -506,28 +430,104 @@
       "added": "2026-06-19"
     },
     {
-      "url": "https://ifp.org/stop-paying-more-for-less-transit/",
-      "hash": "35933c3aed9da43ff9850aa83081cde19bf6ffa80c9226bb03d9fe7e5820eb03",
-      "title": "Stop Paying More for Less Transit",
-      "source": "Institute for Progress",
+      "url": "https://www.ft.com/content/c8731833-10ca-4a12-bfe4-8ebb2584ec68",
+      "hash": "05deb32134e7e40218baf520f3a6592792a35428ccd5aa4c2d1ee59807d67bde",
+      "title": "Robot nation: China’s bid to beat its demographic decline",
+      "source": "Financial Times",
       "author": "",
-      "date": "2026-06-17",
-      "topic": "progress-econ",
-      "column": "sidebar",
-      "score": 0.5,
-      "added": "2026-06-19"
+      "date": "2026-06-25",
+      "topic": "demographics",
+      "column": "main",
+      "score": 0.85,
+      "added": "2026-06-25",
+      "blurb": "China’s working-age population is set to fall to 300 million by century’s end, and the FT reports Beijing is betting on humanoid robots to narrow the labour gap left by its demographic decline."
     },
     {
-      "url": "https://aeon.co/essays/the-strange-rocks-that-wouldnt-exist-without-us",
-      "hash": "529eca099df45440057b5ee073da63de2ea3b35803a743381700ce1081ec20e8",
-      "title": "The strange rocks that wouldn't exist without us",
-      "source": "Aeon",
+      "url": "https://www.noahpinion.blog/p/china-is-winning-the-other-tech-race",
+      "hash": "fcf0f26b0815be26f4d040c8034020f8ee8ec501cdf54f82e2fd0bb4493c09d1",
+      "title": "China is winning the other tech race",
+      "source": "Noahpinion",
+      "author": "Noah Smith",
+      "date": "2026-06-24",
+      "topic": "geopolitics",
+      "column": "main",
+      "score": 0.85,
+      "added": "2026-06-25",
+      "blurb": "Smith argues China grasps the strategic stakes of the electric-power revolution—batteries, EVs and the grid—while America stays fixated on AI, and warns the US is losing a tech race it barely realizes it is running."
+    },
+    {
+      "url": "https://www.slowboring.com/p/congress-passed-the-biggest-housing",
+      "hash": "c678a797cbcb36172a141c50aa0b5f8691e1b95b830c40dd17ea401f9b265337",
+      "title": "Congress passed the biggest housing bill in a generation. Trump is holding it hostage.",
+      "source": "Slow Boring",
+      "author": "Halina Bennet",
+      "date": "2026-06-25",
+      "topic": "progress-econ",
+      "column": "main",
+      "score": 0.78,
+      "added": "2026-06-25",
+      "blurb": "Congress passed the most significant housing-supply bill in decades, but Bennet reports Trump won’t sign it until lawmakers also pass his SAVE America Act—turning an abundance win into a hostage negotiation."
+    },
+    {
+      "url": "https://www.ft.com/content/8496c940-fdc7-4554-bc8d-7bcc93e7d75c",
+      "hash": "28a4eaa8789a06c76cd5c1837e0ab63cd71db478adaf5e0b4aa86ed0dd4903fd",
+      "title": "Anthropic accuses Alibaba of obtaining ‘illicit’ access to Claude",
+      "source": "Financial Times",
       "author": "",
-      "date": "2026-06-16",
+      "date": "2026-06-25",
+      "topic": "geopolitics",
+      "column": "main",
+      "score": 0.75,
+      "added": "2026-06-25",
+      "blurb": "Anthropic says the Chinese ecommerce giant Alibaba used fake accounts to ‘extract’ Claude’s capabilities, the FT reports—the latest flashpoint in US–China competition over access to frontier AI models."
+    },
+    {
+      "url": "https://www.newyorker.com/culture/infinite-scroll/the-ai-design-aesthetic-thats-taking-over-the-internet",
+      "hash": "c9a462473f6221d4894518e255cc908061fa7a1c6fc4778857bb12ce893e1c22",
+      "title": "The A.I.-Design Aesthetic That’s Taking Over the Internet",
+      "source": "The New Yorker",
+      "author": "Kyle Chayka",
+      "date": "2026-06-24",
       "topic": "science-ai",
       "column": "sidebar",
-      "score": 0.5,
-      "added": "2026-06-19"
+      "score": 0.55,
+      "added": "2026-06-25"
+    },
+    {
+      "url": "https://www.theatlantic.com/national-security/2026/06/claude-anthropic-ai-warfare-orders/687581/",
+      "hash": "9fb2e42fad89b270f418cd787b506a38a8a5085640bfcab1fd82a3b4280cf8f9",
+      "title": "Would Claude Refuse an Illegal Military Order?",
+      "source": "The Atlantic",
+      "author": "",
+      "date": "2026-06-24",
+      "topic": "geopolitics",
+      "column": "sidebar",
+      "score": 0.56,
+      "added": "2026-06-25"
+    },
+    {
+      "url": "https://www.economist.com/business/2026/06/24/strange-new-ev-makers-keep-appearing-in-china",
+      "hash": "89295fecfdac1f1b7987428087b90eff16e0c1ec87c7cd4616b26c0b1046e8ce",
+      "title": "Strange new EV-makers keep appearing in China",
+      "source": "The Economist",
+      "author": "",
+      "date": "2026-06-25",
+      "topic": "geopolitics",
+      "column": "sidebar",
+      "score": 0.55,
+      "added": "2026-06-25"
+    },
+    {
+      "url": "https://www.nature.com/articles/d41586-026-02032-3",
+      "hash": "425ebdc72db9d6c0a8b4a033f1111ebd943653aea8dc1ab6e150596b87fb4f40",
+      "title": "Medical records could be revealed by AI training-data vulnerability",
+      "source": "Nature",
+      "author": "Benjamin Thompson",
+      "date": "2026-06-24",
+      "topic": "science-ai",
+      "column": "sidebar",
+      "score": 0.52,
+      "added": "2026-06-25"
     }
   ]
 }
