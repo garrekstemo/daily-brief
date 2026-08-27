@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26",
+ "updated": "2026-08-27",
  "items": [
   {
    "url": "https://www.ft.com/content/ec25a937-3dbd-417c-82a1-db223b62cca6",
@@ -41,19 +41,6 @@
    "blurb": "An autonomous agent now writes and executes quantum-computing code on its own, though Castelvecchi reports it still needs a human hand at points."
   },
   {
-   "url": "https://marginalrevolution.com/marginalrevolution/2026/08/some-fertility-and-ai-forecasts.html",
-   "hash": "76fc3b18d3eb214d209b42209924e99c32fa4365cccac67512d338ee6797285e",
-   "title": "Some fertility and AI forecasts",
-   "source": "Marginal Revolution",
-   "author": "Tyler Cowen",
-   "date": "2026-08-18",
-   "topic": "demographics",
-   "column": "main",
-   "score": 0.88,
-   "added": "2026-08-19",
-   "blurb": "Cowen flags a new fertility projection on which global GDP in 2100 is 10 percent lower, payroll taxes to fund old-age benefits are far higher, and China's share of world output falls from 25.6 to 14.9 percent while America's rises from 11.2 to 14.4 percent."
-  },
-  {
    "url": "https://www.nature.com/articles/d41586-026-02574-6",
    "hash": "b542bd4493bb9ce49b972f3c98583c8cd90fe48f95abe37cbdf85cfb9e974835",
    "title": "Exclusive: NSF set to issue lowest number of new grants in four decades",
@@ -78,45 +65,6 @@
    "score": 0.86,
    "added": "2026-08-20",
    "blurb": "Cassidy argues that a China policy durable enough to outlast a single administration has to be written by Congress rather than improvised by the executive."
-  },
-  {
-   "url": "https://www.nature.com/articles/d41586-026-02551-z",
-   "hash": "90197850032b294edc3a1823380a11115604b35478978a9c9dffdcea20a3c048",
-   "title": "Staggering 90% of biomedical papers now show signs of AI help",
-   "source": "Nature",
-   "author": "Kaia Glickman",
-   "date": "2026-08-20T00:00:00+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.85,
-   "added": "2026-08-21",
-   "blurb": "Papers published in December and archived in PubMed show signs of large-language-model help at a rate far above previous estimates."
-  },
-  {
-   "url": "https://www.nature.com/articles/d41586-026-02516-2",
-   "hash": "f948fc41ce5dae8a970e7491aec0f711d3cf7c4c4c915920e7a89328213cc8d2",
-   "title": "South Africa's scientists must register with official body or risk prison, according to draft law",
-   "source": "Nature",
-   "author": "Sarah Wild",
-   "date": "2026-08-19",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.85,
-   "added": "2026-08-20",
-   "blurb": "A draft South African law would require researchers to register with a regulatory body on pain of prison, and Wild finds many of the scientists it covers have not heard of it."
-  },
-  {
-   "url": "https://www.nature.com/articles/d41586-026-02584-4",
-   "hash": "658fb12803e5507577a428f9ee5f74f7607cd742dc151ce2cc1a32d85d4311b4",
-   "title": "NIH proposes major revamp of how it scores research grant proposals",
-   "source": "Nature",
-   "author": "Max Kozlov",
-   "date": "2026-08-18",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.85,
-   "added": "2026-08-19",
-   "blurb": "For five decades the NIH reported the exact numerical peer-review score of each proposal; the new plan reports only a top, middle or bottom tier, which proponents call an honest admission that three reviewers cannot support that precision and critics call cover for political interference."
   },
   {
    "url": "https://www.construction-physics.com/p/reading-list-082226",
@@ -183,19 +131,6 @@
    "blurb": "Governments must keep procurement processes as open as possible or face technological lock-in later, two economists argue."
   },
   {
-   "url": "https://www.economist.com/business/2026/08/24/americans-should-rekindle-their-love-for-big-business",
-   "hash": "7edf2d2b05ce6f057d056ed77e87ebe71bee6bd44892dc6a60b999d790403e1f",
-   "title": "Americans should rekindle their love for big business",
-   "source": "The Economist",
-   "author": "",
-   "date": "2026-08-24T22:45:06+00:00",
-   "topic": "progress-econ",
-   "column": "main",
-   "score": 0.85,
-   "added": "2026-08-25",
-   "blurb": "New research finds large firms are vital for prosperity."
-  },
-  {
    "url": "https://www.theatlantic.com/podcasts/2026/08/ra-back-to-school/688371/",
    "hash": "500167f99a124fee936bf38c89346f4c86a460d7a5ec331bcf5a351fde2a4ffa",
    "title": "Where Do America’s Colleges Go From Here?",
@@ -235,32 +170,6 @@
    "blurb": ""
   },
   {
-   "url": "https://www.theatlantic.com/photography/2026/08/scenes-2026-world-humanoid-robot-games/688388/",
-   "hash": "b7f301a91390f92e0c2bf401f93c9a2b1ebc8d6cb23a9abddaa1d33ea6fa11d5",
-   "title": "Scenes From the 2026 World Humanoid Robot Games",
-   "source": "The Atlantic",
-   "author": "Alan Taylor",
-   "date": "2026-08-24T16:19:41+00:00",
-   "topic": "geopolitics",
-   "column": "sidebar",
-   "score": 0.58,
-   "added": "2026-08-25",
-   "blurb": ""
-  },
-  {
-   "url": "https://www.nytimes.com/2026/08/24/opinion/mark-carney-tariffs-canada-america.html",
-   "hash": "a38639ad1c54a2103225b697705e92ec705882744a6fa5673141a45e9729f22b",
-   "title": "Canada Said No to America. It Will Reverberate Far Beyond Its Borders.",
-   "source": "The New York Times",
-   "author": "Stephen Marche",
-   "date": "2026-08-24T20:42:53+00:00",
-   "topic": "geopolitics",
-   "column": "sidebar",
-   "score": 0.58,
-   "added": "2026-08-25",
-   "blurb": ""
-  },
-  {
    "url": "https://www.nature.com/articles/d41586-026-02631-0",
    "title": "The future of peer review requires AI support, not AI bans",
    "source": "Nature",
@@ -296,19 +205,6 @@
    "score": 0.87,
    "blurb": "Scientists and publishers are testing a new breed of software that promises impressive accuracy at spotting AI-written text.",
    "hash": "238c295879e00f33ddf94e70ebdaaf6457a0ce50238875ee0abcf8289f45bdc1",
-   "column": "main",
-   "added": "2026-08-26"
-  },
-  {
-   "url": "https://www.nature.com/articles/d41586-026-02094-3",
-   "title": "How one researcher captured a vanished world of UK government science",
-   "source": "Nature",
-   "author": "Emmeline Ledgerwood",
-   "date": "2026-08-25",
-   "topic": "science-ai",
-   "score": 0.84,
-   "blurb": "An oral historian's PhD recorded how privatization reshaped the working lives of Britain's civil-service scientists at the end of the twentieth century.",
-   "hash": "18e78a650e45040d9e588a8a16e8dc92ebedecf7bf8f5772d55d5cee4ee0e96f",
    "column": "main",
    "added": "2026-08-26"
   },
@@ -495,56 +391,154 @@
    "added": "2026-08-26"
   },
   {
-   "url": "https://www.newyorker.com/news/fault-lines/how-the-job-market-will-shape-the-next-generation",
-   "title": "How the Job Market Will Shape the Next Generation",
-   "source": "The New Yorker",
-   "author": "Jay Caspian Kang",
-   "date": "2026-08-25T10:00:00+00:00",
+   "url": "https://worksinprogress.co/issue/the-everything-theory-of-mass-transit/",
+   "hash": "306f1dd2df18161ebada78cab7adfc44c7aaca98a49edc29b438c76ed3d2692f",
+   "title": "The everything theory of mass transit",
+   "source": "Works in Progress",
+   "author": "",
+   "date": "2026-08-26T19:17:31+00:00",
    "topic": "progress-econ",
-   "score": 0.58,
-   "blurb": "",
-   "hash": "b0da19f37f06ce95046908c3cfee1e6a0daf35064abd300b95ac65be19bc9ba5",
-   "column": "sidebar",
-   "added": "2026-08-26"
+   "column": "main",
+   "score": 0.9,
+   "added": "2026-08-27",
+   "blurb": "Loading transit agencies with emissions, beautification, union-job and community-input mandates trades off against moving people: the Boston Green Line extension added a $20 million bike path after 13 people asked for one at a community meeting."
   },
   {
-   "url": "https://www.newyorker.com/science/elements/stumped-by-a-medical-mystery-try-metagenomics",
-   "title": "Stumped by a Medical Mystery? Try Metagenomics",
-   "source": "The New Yorker",
-   "author": "Jason Liebowitz",
-   "date": "2026-08-25T10:00:00+00:00",
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/08/overreaching-causal-language-in-the-social-sciences.html",
+   "hash": "d785640a6fc943f772fb36e76d075f63bb064e704a8586bd06d96516e8d252b7",
+   "title": "Overreaching causal language in the social sciences",
+   "source": "Marginal Revolution",
+   "author": "Tyler Cowen",
+   "date": "2026-08-26T06:54:58+00:00",
    "topic": "science-ai",
-   "score": 0.58,
-   "blurb": "",
-   "hash": "90dc7af101dfbc82ae7cec7b833578c965f1d2617dea9da444273c739d109421",
-   "column": "sidebar",
-   "added": "2026-08-26"
+   "column": "main",
+   "score": 0.89,
+   "added": "2026-08-27",
+   "blurb": "Large language models were used to scan 194,631 cross-sectional articles for causal claims the study designs cannot support."
   },
   {
-   "url": "https://marginalrevolution.com/marginalrevolution/2026/08/towards-a-new-house-of-lords.html",
-   "title": "Towards a New House of Lords",
+   "url": "https://www.slowboring.com/p/yimbys-already-have-a-bold-vision",
+   "hash": "a6effcdfd243b604f7a9f22cc4c560f94101096bace1703e3f676f58af272db1",
+   "title": "YIMBYs already have a bold vision for solving the housing crisis",
+   "source": "Slow Boring",
+   "author": "Matthew Yglesias",
+   "date": "2026-08-26T10:02:08+00:00",
+   "topic": "progress-econ",
+   "column": "main",
+   "score": 0.88,
+   "added": "2026-08-27",
+   "blurb": "Yglesias answers critics who call the pro-housing program narrow, arguing there is nothing small about what it proposes."
+  },
+  {
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/08/data-centers-and-the-open-access-order.html",
+   "hash": "9bbbfe2528233b0a48bb9f9e090028e6f00fc2bc443f3efe40b80c9c6b387c06",
+   "title": "Data Centers and the Open Access Order",
    "source": "Marginal Revolution",
    "author": "Alex Tabarrok",
-   "date": "2026-08-25T11:18:00+00:00",
+   "date": "2026-08-26T11:18:59+00:00",
    "topic": "progress-econ",
-   "score": 0.58,
-   "blurb": "",
-   "hash": "3d4df75fccca3b63885d5f8866cbf432f1434d67d525dc2bac4a6dd7b8846154",
-   "column": "sidebar",
-   "added": "2026-08-26"
+   "column": "main",
+   "score": 0.86,
+   "added": "2026-08-27",
+   "blurb": "Tabarrok argues data centres neither use much water nor blight the landscape, and that what the US backlash really reveals is a closing access order."
   },
   {
-   "url": "https://www.nytimes.com/2026/08/25/business/trump-canada-tariffs.html",
-   "title": "Trump's Canada Tariffs Rely on Untested Law",
-   "source": "The New York Times",
-   "author": "Tony Romm",
-   "date": "2026-08-25T16:37:00+00:00",
-   "topic": "geopolitics",
-   "score": 0.58,
-   "blurb": "",
-   "hash": "1ce8ffe564eaea0a625a86f59ec2b84e31161f409fcb0245316c606ce719954c",
+   "url": "https://www.noahpinion.blog/p/the-death-of-market-street",
+   "hash": "93de2550341455346f61d1da1c5b80f2f8baec9455d7a7ef80983c76287036d6",
+   "title": "The death of Market Street",
+   "source": "Noahpinion",
+   "author": "Noah Smith",
+   "date": "2026-08-26T09:12:35+00:00",
+   "topic": "progress-econ",
+   "column": "main",
+   "score": 0.85,
+   "added": "2026-08-27",
+   "blurb": "Smith on how San Francisco turned its most iconic street into a giant empty scar."
+  },
+  {
+   "url": "https://www.scientificamerican.com/article/in-a-2023-interview-trumps-fda-new-pick-laid-out-a-vision-for-conservative-based-science/",
+   "hash": "3e2b54a6773659c1d99db2e2ae0724f3629032f97d3224b6563a3e081ea6c9c8",
+   "title": "In a 2023 interview, Trump’s new FDA pick laid out a vision for ‘conservative-based’ science",
+   "source": "Scientific American",
+   "author": "",
+   "date": "2026-08-25T13:30:00+00:00",
+   "topic": "science-ai",
+   "column": "main",
+   "score": 0.85,
+   "added": "2026-08-27",
+   "blurb": "In a 2023 podcast, Heidi Overton called for building \"alternate systems\" for publishing research that would back conservative policy."
+  },
+  {
+   "url": "https://www.scientificamerican.com/article/jill-lepore-on-why-silicon-valley-gets-science-fiction-wrong/",
+   "hash": "51500f4ba0ef769cd6f8bd9234040799c44385ce3a2083b96fe5ac5f044542e6",
+   "title": "Jill Lepore on why Silicon Valley gets science fiction wrong",
+   "source": "Scientific American",
+   "author": "",
+   "date": "2026-08-26T17:00:00+00:00",
+   "topic": "science-ai",
    "column": "sidebar",
-   "added": "2026-08-26"
+   "score": 0.59,
+   "added": "2026-08-27"
+  },
+  {
+   "url": "https://www.ft.com/content/9cb63980-cd43-419d-a7e5-42039b9fd01e",
+   "hash": "0c7e37e91c68289b4fdc20b86f110fea69e657a353587fe794cb66b03e41637e",
+   "title": "The multiplying risks of financing data centres",
+   "source": "Financial Times",
+   "author": "",
+   "date": "2026-08-26T04:00:13+00:00",
+   "topic": "progress-econ",
+   "column": "sidebar",
+   "score": 0.59,
+   "added": "2026-08-27"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-026-02568-4",
+   "hash": "4db5ca3ca76aa1760e771bfb572a7f06a694353fa665c0584f6795131c7dddaf",
+   "title": "South Africa’s ‘registration law’ for scientists could be a template for the world — if the nation gets it right",
+   "source": "Nature",
+   "author": "",
+   "date": "2026-08-26T00:00:00+00:00",
+   "topic": "science-ai",
+   "column": "sidebar",
+   "score": 0.59,
+   "added": "2026-08-27"
+  },
+  {
+   "url": "https://www.ft.com/content/0ec76ba3-5f7f-4085-88fb-acf21954bc85",
+   "hash": "df0039ccb0240aadbac4778d1edbb3d50f9ea9c80cad2d31a10ad938c616ccd1",
+   "title": "Anthropic agrees $45bn AI data centre deal with UK start-up Nscale",
+   "source": "Financial Times",
+   "author": "",
+   "date": "2026-08-26T21:48:11+00:00",
+   "topic": "geopolitics",
+   "column": "sidebar",
+   "score": 0.59,
+   "added": "2026-08-27"
+  },
+  {
+   "url": "https://www.nytimes.com/2026/08/26/business/economy/trump-small-business-administration.html",
+   "hash": "997bd8310e2b3728025dd8c037d5863e97cae12836224cffe05205c293665909",
+   "title": "Trump Administration Wants Billion-Dollar Businesses to Qualify as ‘Small’",
+   "source": "The New York Times",
+   "author": "Sydney Ember and Lydia DePillis",
+   "date": "2026-08-26T20:16:30+00:00",
+   "topic": "progress-econ",
+   "column": "sidebar",
+   "score": 0.59,
+   "added": "2026-08-27"
+  },
+  {
+   "url": "https://www.quantamagazine.org/in-hilbert-space-all-things-are-quantumly-possible-20260826/",
+   "hash": "6caedbd537a7d914c0aa483c8c002067a85d71ad035ea34b19d01451fc80c8fe",
+   "title": "In Hilbert Space, All Things Are Quantumly Possible",
+   "source": "Quanta Magazine",
+   "author": "Charlie Wood",
+   "date": "2026-08-26T14:30:35+00:00",
+   "topic": "science-ai",
+   "column": "sidebar",
+   "score": 0.58,
+   "added": "2026-08-27"
   }
  ]
 }
