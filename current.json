@@ -1,19 +1,6 @@
 {
- "updated": "2026-09-07",
+ "updated": "2026-09-08",
  "items": [
-  {
-   "url": "https://www.theatlantic.com/ideas/2026/08/ai-use-college-cheat/688451/",
-   "hash": "0742f438021b080979d044701f986947acdd587f48f3b63fced9f40d46ad7007",
-   "title": "A Society of Cheats",
-   "source": "The Atlantic",
-   "author": "John Paul Rollert",
-   "date": "2026-08-30T12:02:52+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.88,
-   "added": "2026-08-31",
-   "blurb": "Rollert argues that students' use of AI is teaching them to cut corners, disdain rules and believe that integrity is for suckers."
-  },
   {
    "url": "https://marginalrevolution.com/marginalrevolution/2026/08/ai-and-employment-what-the-firms-say.html",
    "hash": "86614d9dd0a357101cd07b1c1d5ee1c7c9e0b35138a152610a929d1b82fc956b",
@@ -106,19 +93,6 @@
    "blurb": "New fellowships aim to entice Indian researchers abroad to come home, but scientists tell Nature the schemes offer no long-term income security."
   },
   {
-   "url": "https://www.newyorker.com/magazine/2026/09/07/whos-afraid-of-ai-music",
-   "hash": "066c3d679bbda7291bdc29e0ff432204bf8c500e2653b083cdafda2311e72e75",
-   "title": "Who’s Afraid of A.I. Music?",
-   "source": "The New Yorker",
-   "author": "Kelefa Sanneh",
-   "date": "2026-08-31T10:00:00+00:00",
-   "topic": "science-ai",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-02",
-   "blurb": ""
-  },
-  {
    "url": "https://www.economist.com/united-states/2026/09/02/how-data-centres-became-one-of-americas-hottest-political-issues",
    "hash": "c17edcf5a49345f4946f7d9e35bc3eb05ce8b3810e78cea68a940560a9bdc0ba",
    "title": "How data centres became one of America’s hottest political issues",
@@ -156,71 +130,6 @@
    "score": 0.87,
    "added": "2026-09-03",
    "blurb": "Cowen flags a new paper: after four decades of expansion, the US college wage premium has fallen sharply since 2022 — implying an unprecedented drop in relative demand for college labour."
-  },
-  {
-   "url": "https://www.foreignaffairs.com/china/how-does-world-really-view-china",
-   "hash": "179608cbac3c7cab6e3029c96c9222b00e8c1a4b56d342ed31d5a3f87744c5a0",
-   "title": "How Does the World Really View China?",
-   "source": "Foreign Affairs",
-   "author": "Adam Y. Liu",
-   "date": "2026-09-02T04:00:00+00:00",
-   "topic": "geopolitics",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-03",
-   "blurb": ""
-  },
-  {
-   "url": "https://www.nature.com/articles/d41586-026-02677-0",
-   "hash": "968a5b55cbbe67f04af53dbe7b094bd4f55d7883033dcb3f2c54a8e670ef5e59",
-   "title": "The death of Jason Arday must prompt deep reflection",
-   "source": "Nature",
-   "author": "",
-   "date": "2026-09-02T00:00:00+00:00",
-   "topic": "science-ai",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-03",
-   "blurb": ""
-  },
-  {
-   "url": "https://www.newyorker.com/culture/infinite-scroll/the-unique-horrors-of-ai-food-slop",
-   "hash": "8d95893803c3b14f6cce4539d7c25b0f831f912dc975c1dc4ced4eac7e60055b",
-   "title": "The Unique Horrors of A.I. Food Slop",
-   "source": "The New Yorker",
-   "author": "Brady Brickner-Wood",
-   "date": "2026-09-02T10:00:00+00:00",
-   "topic": "science-ai",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-03",
-   "blurb": ""
-  },
-  {
-   "url": "https://marginalrevolution.com/marginalrevolution/2026/09/america-is-still-poised-for-a-data-center-boom.html",
-   "hash": "8deabd01b5b50b19fe32914c13d469e335575dc20b6832a8ae8c947fc222bba5",
-   "title": "America is still poised for a data center boom",
-   "source": "Marginal Revolution",
-   "author": "Tyler Cowen",
-   "date": "2026-09-02T04:33:26+00:00",
-   "topic": "progress-econ",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-03",
-   "blurb": ""
-  },
-  {
-   "url": "https://www.noahpinion.blog/p/roundup-87-technology-bad",
-   "hash": "7e414a6a77aa1fc5a1fb994b8b5bb26b2d2567f15cb4aa8afdff39e73f87ed59",
-   "title": "Roundup #87: Technology BAD!!",
-   "source": "Noahpinion",
-   "author": "Noah Smith",
-   "date": "2026-09-01T02:26:19+00:00",
-   "topic": "progress-econ",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-03",
-   "blurb": ""
   },
   {
    "url": "https://worksinprogress.co/issue/all-the-microbes-you-cant-have/",
@@ -418,19 +327,6 @@
    "blurb": ""
   },
   {
-   "url": "https://www.theatlantic.com/ideas/2026/09/open-ai-consciousness-morality/688535/",
-   "hash": "0ff5f76c44fc24dd59bbbda2b60486c0f9598da1909d8216a6373b7f38e9f573",
-   "title": "AI Is Already Making Us Less Human",
-   "source": "The Atlantic",
-   "author": "David Brooks",
-   "date": "2026-09-06T10:00:00+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.86,
-   "added": "2026-09-07",
-   "blurb": "Brooks argues that as we learn to think more and more highly of the bots, we will learn to think less and less highly of our fellow humans."
-  },
-  {
    "url": "https://www.theatlantic.com/ideas/2026/09/universities-prohibiting-ai-classroom/688509/",
    "hash": "67e1002cb55b26184de27c9459809f9c59946e31b6e86de51632f35049af09ec",
    "title": "Why I Want More AI at Dartmouth",
@@ -444,19 +340,6 @@
    "blurb": "Dartmouth’s president makes the case for more AI in the classroom: universities that hide from the technology will merely secure their irrelevance, she writes."
   },
   {
-   "url": "https://www.economist.com/united-states/2026/09/05/checks-and-balance-newsletter-america-has-a-new-villain",
-   "hash": "e85818de6478ab771d22fe5b880eb847ba467b00b88bc5c3a97247e43bff8956",
-   "title": "Checks and Balance newsletter: America has a new villain",
-   "source": "The Economist",
-   "author": "",
-   "date": "2026-09-05T15:16:46+00:00",
-   "topic": "progress-econ",
-   "column": "main",
-   "score": 0.8,
-   "added": "2026-09-07",
-   "blurb": "Shashank Joshi, the Economist’s Washington bureau chief, on why the backlash against data centres — America’s new villain — is misguided."
-  },
-  {
    "url": "https://www.noahpinion.blog/p/america-is-still-beating-china-in",
    "hash": "98cefbc3f06049ea46cc305877a8b663a8a8cc0f681bc5d217e2c50ff519907b",
    "title": "America is still beating China in the AI race",
@@ -468,19 +351,6 @@
    "score": 0.9,
    "added": "2026-09-07",
    "blurb": "Smith argues the US is staying ahead of China in the AI race, though the costs of maintaining that lead are still unknown."
-  },
-  {
-   "url": "https://www.slowboring.com/p/the-return-of-institutional-purpose",
-   "hash": "24926a1c6a18e97a694fbf8eef99edeb18abb833b8f0e1dc9249036390eb25dd",
-   "title": "The return of institutional purpose",
-   "source": "Slow Boring",
-   "author": "Halina Bennet",
-   "date": "2026-09-05T13:02:15+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.82,
-   "added": "2026-09-07",
-   "blurb": "Generative AI gives institutions the chance to re-evaluate their values, Slow Boring argues — a return of institutional purpose."
   },
   {
    "url": "https://marginalrevolution.com/marginalrevolution/2026/09/the-kalshi-citizen-debt-forecast-cdf.html",
@@ -546,6 +416,136 @@
    "score": 0.59,
    "added": "2026-09-07",
    "blurb": ""
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-026-02822-9",
+   "title": "Anthropic AI ‘formalizes’ proof of Fermat’s last theorem in just 11 days",
+   "source": "Nature",
+   "author": "Davide Castelvecchi",
+   "date": "2026-09-07T00:00:00+00:00",
+   "topic": "science-ai",
+   "score": 0.92,
+   "blurb": "Claude produced a 13-million-line, computer-checked proof of Fermat’s last theorem in 11 days, and mathematicians now expect AI to scrutinize, and perhaps overturn, results across the whole library of mathematics.",
+   "hash": "53e4b9334364ed4aacd06694991d54cddcdc2f93c409544f899f28096f1eb754",
+   "added": "2026-09-08",
+   "column": "main"
+  },
+  {
+   "url": "https://www.newyorker.com/news/the-financial-page/has-the-ai-job-apocalypse-been-postponed",
+   "title": "Has the A.I. Job Apocalypse Been Postponed?",
+   "source": "The New Yorker",
+   "author": "John Cassidy",
+   "date": "2026-09-07T10:00:00+00:00",
+   "topic": "progress-econ",
+   "score": 0.88,
+   "blurb": "The spread of models like Claude and ChatGPT has not yet produced mass displacement of workers, but deployment is accelerating and economic pressures are rising.",
+   "hash": "352a87c328c70b290dfd78a4aac2bea0e1e2ead001d7740c4034ebe36efbcd06",
+   "added": "2026-09-08",
+   "column": "main"
+  },
+  {
+   "url": "https://www.noahpinion.blog/p/ai-keeps-stubbornly-refusing-to-take",
+   "title": "AI keeps stubbornly refusing to take our jobs",
+   "source": "Noahpinion",
+   "author": "Noah Smith",
+   "date": "2026-09-07T08:13:00+00:00",
+   "topic": "progress-econ",
+   "score": 0.87,
+   "blurb": "A Labor Day look at why, despite rapid AI adoption, human labor is still valuable and the predicted job losses keep failing to show up in the data.",
+   "hash": "24d8504564a457d8d6dc0baf0372236fd94e1dac2512868c90de60d464b2a891",
+   "added": "2026-09-08",
+   "column": "main"
+  },
+  {
+   "url": "https://www.ft.com/content/8c5c7c44-c9fd-4326-b09a-9f58e3f144b9",
+   "title": "‘Chimerica’ is now a chimera — and global stability is the victim",
+   "source": "Financial Times",
+   "author": "",
+   "date": "2026-09-07T13:00:00+00:00",
+   "topic": "geopolitics",
+   "score": 0.86,
+   "blurb": "For a host of reasons, China shock 2.0 looks nothing like its predecessor in the 2000s, and the unwinding of US–China economic interdependence is undermining global stability.",
+   "hash": "3ca3eb308e172ee29847039fdf2eec37a5ee1719ecfbfab06bcb61623f32c5bf",
+   "added": "2026-09-08",
+   "column": "main"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-026-02808-7",
+   "title": "Isaac Newton’s remarkable year — and the plagiarism accusations that followed",
+   "source": "Nature",
+   "author": "Andrew Robinson",
+   "date": "2026-09-07T00:00:00+00:00",
+   "topic": "science-ai",
+   "score": 0.59,
+   "blurb": "",
+   "hash": "5540874706f4f4667bbfadebbda10d79a872b5b8bfc1197ff0e522ea9ad231bb",
+   "added": "2026-09-08",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/09/emergent-ventures-winners-59th-cohort.html",
+   "title": "Emergent Ventures winners, 59th cohort",
+   "source": "Marginal Revolution",
+   "author": "Tyler Cowen",
+   "date": "2026-09-07T04:32:00+00:00",
+   "topic": "progress-econ",
+   "score": 0.59,
+   "blurb": "",
+   "hash": "2f89980dbc75b8e03ff458b5db56b32adcf22d3490887019ab3061c985b12b46",
+   "added": "2026-09-08",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.nytimes.com/2026/09/07/business/china-social-media-pessimism.html",
+   "title": "Social Media in China Is Getting Really Dark",
+   "source": "The New York Times",
+   "author": "Li Yuan",
+   "date": "2026-09-07T09:04:00+00:00",
+   "topic": "geopolitics",
+   "score": 0.59,
+   "blurb": "",
+   "hash": "19b15b3769f46928628ad7fae4e1b9f6d2fa64e5ed42aca60ee1650dcfc242fd",
+   "added": "2026-09-08",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.scientificamerican.com/article/does-the-u-s-need-more-spaceports/",
+   "title": "Does the U.S. need more spaceports?",
+   "source": "Scientific American",
+   "author": "",
+   "date": "2026-09-07T12:00:00+00:00",
+   "topic": "progress-econ",
+   "score": 0.59,
+   "blurb": "",
+   "hash": "438a044d481169dee1f2be3fa90f58dd052c4b115d38e5438904787792bfc062",
+   "added": "2026-09-08",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.theatlantic.com/podcasts/2026/09/ra-the-time-tax/688503/",
+   "title": "How the Government Wastes Our Time",
+   "source": "The Atlantic",
+   "author": "Adam Harris",
+   "date": "2026-09-07T16:00:00+00:00",
+   "topic": "progress-econ",
+   "score": 0.59,
+   "blurb": "",
+   "hash": "fda33fb8925fd87271f040a9f37ad65768b3835dc9a235c434630af5c0bec973",
+   "added": "2026-09-08",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.ft.com/content/9aa8805c-8b6a-4dfc-9e61-f5181ce07fc8",
+   "title": "Big US university endowments outperform S&P 500 index",
+   "source": "Financial Times",
+   "author": "",
+   "date": "2026-09-07T04:00:00+00:00",
+   "topic": "science-ai",
+   "score": 0.59,
+   "blurb": "",
+   "hash": "9a00616256bd19793bbf4a636aee3ef3d919b2973aaab92784b42990f1b390d5",
+   "added": "2026-09-08",
+   "column": "sidebar"
   }
  ]
 }

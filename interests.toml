@@ -112,12 +112,12 @@ feed = ""
 [exemplars]
 titles = [
   "AI Wrote A Harvard Physicist’s Most Recent Paper. No One Knows What It Means for Science.",
-  "Milei, Modi, Trump: an anti-red-tape revolution is under way",
-  "Opinion | A Renewed Liberalism Can Meet the Populist Challenge",
-  "Many governments talk about cutting regulation but few manage to",
-  "Declining population and GDP growth",
-  "Long-run economic growth despite population decline",
-  "Liberals speak a different language",
-  "The costs of a declining population",
+  "The world’s most influential economist is oddly unconvincing",
+  "What if ideas aren’t getting harder to find, after all?",
+  "Will AI spark a scientific renaissance — or a diffuse monoculture?",
+  "How artificial intelligence got better at building itself",
+  "AI-Generated Code Is Not Reproducible (Yet): An Empirical Study of Dependency Gaps in LLM-Based Coding Agents",
+  "1,500 scientists lift the lid on reproducibility",
+  "How the World Became Rich: The Historical Origins of Economic Growth – EH.net",
 ]
 # <<end:exemplars>>
