@@ -1,45 +1,6 @@
 {
- "updated": "2026-09-10",
+ "updated": "2026-09-11",
  "items": [
-  {
-   "url": "https://www.economist.com/united-states/2026/09/02/how-data-centres-became-one-of-americas-hottest-political-issues",
-   "hash": "c17edcf5a49345f4946f7d9e35bc3eb05ce8b3810e78cea68a940560a9bdc0ba",
-   "title": "How data centres became one of America’s hottest political issues",
-   "source": "The Economist",
-   "author": "",
-   "date": "2026-09-02T19:35:06+00:00",
-   "topic": "progress-econ",
-   "column": "main",
-   "score": 0.88,
-   "added": "2026-09-03",
-   "blurb": "Growing hatred of the facilities is reshaping the midterm elections, the Economist reports — the AI data-centre buildout has become one of America’s hottest political issues."
-  },
-  {
-   "url": "https://www.nature.com/articles/s41586-026-10898-6",
-   "hash": "6f68af1a71e183e6448aaf1bb8ef5ee7f00397adc59aaff0152b5b8392c507a2",
-   "title": "Designing physics experiments with artificial intelligence",
-   "source": "Nature",
-   "author": "Jonathan Klimesch",
-   "date": "2026-09-02T00:00:00+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.9,
-   "added": "2026-09-03",
-   "blurb": "A Nature Review surveys AI methods that now propose entirely new experimental layouts — configurations that often challenge established design conventions while matching or exceeding human-designed set-ups."
-  },
-  {
-   "url": "https://marginalrevolution.com/marginalrevolution/2026/09/the-college-wage-premium-in-the-generative-ai-era.html",
-   "hash": "4bac4d721dd9acf111e6d5585dd72193a55dc360866024dee843ed5af74ba7ee",
-   "title": "The College Wage Premium in the Generative AI Era",
-   "source": "Marginal Revolution",
-   "author": "Tyler Cowen",
-   "date": "2026-09-02T04:27:08+00:00",
-   "topic": "progress-econ",
-   "column": "main",
-   "score": 0.87,
-   "added": "2026-09-03",
-   "blurb": "Cowen flags a new paper: after four decades of expansion, the US college wage premium has fallen sharply since 2022 — implying an unprecedented drop in relative demand for college labour."
-  },
   {
    "url": "https://worksinprogress.co/issue/all-the-microbes-you-cant-have/",
    "hash": "0454b0b326e7864d7879cfe5b884663184dc13255d9e60e5abf71f146456eb6f",
@@ -117,19 +78,6 @@
    "score": 0.88,
    "added": "2026-09-04",
    "blurb": "India, Peru and Vietnam are rolling out penalties for research misconduct — docked bonuses, restricted grant access, lower institutional rankings — as one audit found fabricated citations 12 times more common in 2025 than in 2023, Nature reports."
-  },
-  {
-   "url": "https://www.economist.com/leaders/2026/09/03/the-moral-panic-over-data-centres-is-foolish",
-   "hash": "780923ad4469dfea5ed5816538df94fd04cee37304151df0455bdb52b78cd3a7",
-   "title": "The moral panic over data centres is foolish",
-   "source": "The Economist",
-   "author": "",
-   "date": "2026-09-03T14:40:01+00:00",
-   "topic": "progress-econ",
-   "column": "main",
-   "score": 0.87,
-   "added": "2026-09-04",
-   "blurb": "The Economist’s leader calls the growing backlash against data centres a moral panic fuelled by misinformation and misunderstanding."
   },
   {
    "url": "https://www.economist.com/business/2026/09/03/chinese-businesses-of-all-stripes-are-turning-to-huawei",
@@ -409,19 +357,6 @@
    "blurb": "The Open Science Framework will stop hosting data and code from November amid funding concerns, Chawla reports, forcing researchers to reconsider where their reproducibility materials live."
   },
   {
-   "url": "https://www.scientificamerican.com/article/openai-claims-blockbuster-math-breakthrough-amid-swirl-of-controversy/",
-   "hash": "637c703c556d76360ceca1ef0be901893f3fa5b704b1227e71687b7e6c37c7c2",
-   "title": "OpenAI claims blockbuster math breakthrough amid swirl of controversy",
-   "source": "Scientific American",
-   "author": "",
-   "date": "2026-09-08T16:30:00+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.85,
-   "added": "2026-09-10",
-   "blurb": "Before OpenAI’s announcement, rumours were already circulating among mathematicians about the proof’s origins; OpenAI has denied all allegations, Scientific American reports."
-  },
-  {
    "url": "https://www.scientificamerican.com/article/ai-may-have-just-solved-a-million-dollar-math-problem-the-field-will-never-be-the-same/",
    "hash": "7b16448ee1261be26f9a2ffd4408e555405acbe68d821f1400c31f362878611c",
    "title": "AI may have just solved a million-dollar math problem. The field will never be the same",
@@ -528,6 +463,71 @@
    "column": "sidebar",
    "score": 0.59,
    "added": "2026-09-10"
+  },
+  {
+   "url": "https://www.nytimes.com/2026/09/10/science/tristan-buckmaster-openai-math-navier-stokes.html",
+   "hash": "20e76a60f2b15840ecca89855bf12794a531740f3c86fac94f14bc11364e4f1b",
+   "title": "The Mathematician Crushed Between OpenAI and Anthropic Over a Math Problem",
+   "source": "The New York Times",
+   "author": "Kenneth Chang",
+   "date": "2026-09-10T17:18:48+00:00",
+   "topic": "science-ai",
+   "column": "main",
+   "score": 0.92,
+   "added": "2026-09-11",
+   "blurb": "Kenneth Chang profiles Tristan Buckmaster, who was closing in on a Navier–Stokes proof when an AI lab's resources got there first — a case study in what AI does to human research careers."
+  },
+  {
+   "url": "https://www.scientificamerican.com/article/mathematicians-confront-the-ai-apocalypse/",
+   "hash": "862e6758e8cf9899fabcf79d0fc9963f398973920579fea6e983c1bd60a05164",
+   "title": "Mathematicians confront the AI apocalypse",
+   "source": "Scientific American",
+   "author": "",
+   "date": "2026-09-10T07:30:00+00:00",
+   "topic": "science-ai",
+   "column": "main",
+   "score": 0.9,
+   "added": "2026-09-11",
+   "blurb": "Scientific American asks what happens to mathematics as a discipline once machines outpace its brightest practitioners."
+  },
+  {
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/09/economic-scenarios-for-transformative-ai.html",
+   "hash": "23b6850b1c0d3712599549ba1fce7c0f083e4cf30185c667a09c80db7762142e",
+   "title": "Economic Scenarios for Transformative AI",
+   "source": "Marginal Revolution",
+   "author": "Tyler Cowen",
+   "date": "2026-09-10T08:39:10+00:00",
+   "topic": "progress-econ",
+   "column": "main",
+   "score": 0.9,
+   "added": "2026-09-11",
+   "blurb": "Cowen flags a new Korinek–Jones et al. framework from Anthropic for assessing the economic effects of transformative AI, praising it as sober and dynamically consistent."
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-026-02026-1",
+   "hash": "f7cf21bde0d7c94e9a8deaf8ab9483252899b593dffe808ae2b89b16fdf4fd07",
+   "title": "AI researchers reckon with the $1.5 million ‘academia tax’",
+   "source": "Nature",
+   "author": "Ben Deighton",
+   "date": "2026-09-10T00:00:00+00:00",
+   "topic": "science-ai",
+   "column": "main",
+   "score": 0.88,
+   "added": "2026-09-11",
+   "blurb": "Nature's Ben Deighton on why AI researchers forgo seven-figure industry pay for academic freedom, and the hybrid models that may let them have both."
+  },
+  {
+   "url": "https://nautil.us/a-natural-solution-to-the-replication-crisis-in-science-1284942/",
+   "hash": "66141cec591081e181603ccad74e5de970a9b998e1a7c18b618f7edf3667647a",
+   "title": "A Natural Solution to the Replication Crisis in Science",
+   "source": "Nautilus",
+   "author": "Orit Peleg",
+   "date": "2026-09-10T21:30:00+00:00",
+   "topic": "science-ai",
+   "column": "main",
+   "score": 0.88,
+   "added": "2026-09-11",
+   "blurb": "Orit Peleg argues in Nautilus that scientists should borrow from ant colonies' distributed, redundant verification to fix reproducibility."
   }
  ]
 }
