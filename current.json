@@ -1,19 +1,6 @@
 {
- "updated": "2026-09-14",
+ "updated": "2026-09-15",
  "items": [
-  {
-   "url": "https://www.noahpinion.blog/p/america-is-still-beating-china-in",
-   "hash": "98cefbc3f06049ea46cc305877a8b663a8a8cc0f681bc5d217e2c50ff519907b",
-   "title": "America is still beating China in the AI race",
-   "source": "Noahpinion",
-   "author": "Noah Smith",
-   "date": "2026-09-05T07:36:17+00:00",
-   "topic": "geopolitics",
-   "column": "main",
-   "score": 0.9,
-   "added": "2026-09-07",
-   "blurb": "Smith argues the US is staying ahead of China in the AI race, though the costs of maintaining that lead are still unknown."
-  },
   {
    "url": "https://www.nature.com/articles/d41586-026-02822-9",
    "title": "Anthropic AI ‘formalizes’ proof of Fermat’s last theorem in just 11 days",
@@ -24,32 +11,6 @@
    "score": 0.92,
    "blurb": "Claude produced a 13-million-line, computer-checked proof of Fermat’s last theorem in 11 days, and mathematicians now expect AI to scrutinize, and perhaps overturn, results across the whole library of mathematics.",
    "hash": "53e4b9334364ed4aacd06694991d54cddcdc2f93c409544f899f28096f1eb754",
-   "added": "2026-09-08",
-   "column": "main"
-  },
-  {
-   "url": "https://www.newyorker.com/news/the-financial-page/has-the-ai-job-apocalypse-been-postponed",
-   "title": "Has the A.I. Job Apocalypse Been Postponed?",
-   "source": "The New Yorker",
-   "author": "John Cassidy",
-   "date": "2026-09-07T10:00:00+00:00",
-   "topic": "progress-econ",
-   "score": 0.88,
-   "blurb": "The spread of models like Claude and ChatGPT has not yet produced mass displacement of workers, but deployment is accelerating and economic pressures are rising.",
-   "hash": "352a87c328c70b290dfd78a4aac2bea0e1e2ead001d7740c4034ebe36efbcd06",
-   "added": "2026-09-08",
-   "column": "main"
-  },
-  {
-   "url": "https://www.noahpinion.blog/p/ai-keeps-stubbornly-refusing-to-take",
-   "title": "AI keeps stubbornly refusing to take our jobs",
-   "source": "Noahpinion",
-   "author": "Noah Smith",
-   "date": "2026-09-07T08:13:00+00:00",
-   "topic": "progress-econ",
-   "score": 0.87,
-   "blurb": "A Labor Day look at why, despite rapid AI adoption, human labor is still valuable and the predicted job losses keep failing to show up in the data.",
-   "hash": "24d8504564a457d8d6dc0baf0372236fd94e1dac2512868c90de60d464b2a891",
    "added": "2026-09-08",
    "column": "main"
   },
@@ -65,19 +26,6 @@
    "score": 0.93,
    "added": "2026-09-09",
    "blurb": "OpenAI agents proved the Navier-Stokes equations can blow up in three dimensions, with the proof verified in Lean — but Kakaes reports a competing NYU group, and both teams built on techniques from mathematicians Córdoba and Martínez-Zoroa."
-  },
-  {
-   "url": "https://www.nature.com/articles/d41586-026-02842-5",
-   "hash": "0ba4edc89514db362ed3e76e3b00078db777427378bda441d63e7ebbacf6f2d6",
-   "title": "OpenAI claims huge maths breakthrough on a famed ‘Millennium Problem’",
-   "source": "Nature",
-   "author": "Davide Castelvecchi",
-   "date": "2026-09-07T15:00:00+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.88,
-   "added": "2026-09-09",
-   "blurb": "Castelvecchi reports OpenAI’s claim to have cracked the physics of fluids using AI, solving one of the toughest puzzles in mathematics and a famed Millennium Problem."
   },
   {
    "url": "https://www.nature.com/articles/d41586-026-02678-z",
@@ -145,78 +93,6 @@
    "blurb": "The Open Science Framework will stop hosting data and code from November amid funding concerns, Chawla reports, forcing researchers to reconsider where their reproducibility materials live."
   },
   {
-   "url": "https://www.nytimes.com/2026/09/09/opinion/openai-ai-companies-safety-regulation.html",
-   "hash": "dbae9f499d4e51908fc6e9d6ebdd9139fc8d99a40326d81e083bb4c2e861bb2d",
-   "title": "I Worked on Safety at OpenAI. The Fix Isn’t Hard.",
-   "source": "The New York Times",
-   "author": "Steven Adler",
-   "date": "2026-09-09T21:00:03+00:00",
-   "topic": "science-ai",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-10"
-  },
-  {
-   "url": "https://www.theatlantic.com/books/2026/09/francis-fukuyama-in-the-realm-of-the-last-man-memoir-book-review/688548/?utm_source=feed",
-   "hash": "0c223c1a8c9b42542010b19f0874c2755bf88eb482c594ef100653031438b657",
-   "title": "The Sadness of Being the ‘Last Man’",
-   "source": "The Atlantic",
-   "author": "Gal Beckerman",
-   "date": "2026-09-09T12:00:00+00:00",
-   "topic": "progress-econ",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-10"
-  },
-  {
-   "url": "https://www.theatlantic.com/magazine/2026/10/usa-commercial-surrogacy-industry/688357/?utm_source=feed",
-   "hash": "92d01bd5310f525c8bddab260019d289a364301705967236d8d147917d21a6b3",
-   "title": "Mothers for Sale",
-   "source": "The Atlantic",
-   "author": "Helen Lewis",
-   "date": "2026-09-09T11:00:00+00:00",
-   "topic": "demographics",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-10"
-  },
-  {
-   "url": "https://www.nytimes.com/2026/09/09/us/politics/trump-census-immigrants-race.html",
-   "hash": "9e342bf0a8809d5731d7879ef92baa0b33349f78fdc9c5ac29daaa02d4e1064f",
-   "title": "Trump’s Census Overhaul Would Exclude Some Immigrants and Remove Questions on Race",
-   "source": "The New York Times",
-   "author": "Zolan Kanno-Youngs",
-   "date": "2026-09-10T00:21:27+00:00",
-   "topic": "demographics",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-10"
-  },
-  {
-   "url": "https://www.ft.com/content/012b9a34-445d-483c-a6c6-1fbd52e60731",
-   "hash": "719164701f52b47d669e17e385d35a2d170746e678439ed267a9e08873bc5f9a",
-   "title": "China warns bankers not to flood IPO market",
-   "source": "Financial Times",
-   "author": "",
-   "date": "2026-09-10T00:45:53+00:00",
-   "topic": "geopolitics",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-10"
-  },
-  {
-   "url": "https://www.nytimes.com/2026/09/09/business/nvidia-groq-antitrust.html",
-   "hash": "977e9b4cb3c5cf09071cfd4e646237edbbc7d4e69a5dbf767f77f30149e49de0",
-   "title": "Justice Dept. Investigates Nvidia Deal With Groq",
-   "source": "The New York Times",
-   "author": "Lauren Hirsch and David McCabe",
-   "date": "2026-09-10T00:23:24+00:00",
-   "topic": "geopolitics",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-10"
-  },
-  {
    "url": "https://www.nytimes.com/2026/09/10/science/tristan-buckmaster-openai-math-navier-stokes.html",
    "hash": "20e76a60f2b15840ecca89855bf12794a531740f3c86fac94f14bc11364e4f1b",
    "title": "The Mathematician Crushed Between OpenAI and Anthropic Over a Math Problem",
@@ -254,19 +130,6 @@
    "score": 0.9,
    "added": "2026-09-11",
    "blurb": "Cowen flags a new Korinek–Jones et al. framework from Anthropic for assessing the economic effects of transformative AI, praising it as sober and dynamically consistent."
-  },
-  {
-   "url": "https://www.nature.com/articles/d41586-026-02026-1",
-   "hash": "f7cf21bde0d7c94e9a8deaf8ab9483252899b593dffe808ae2b89b16fdf4fd07",
-   "title": "AI researchers reckon with the $1.5 million ‘academia tax’",
-   "source": "Nature",
-   "author": "Ben Deighton",
-   "date": "2026-09-10T00:00:00+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.88,
-   "added": "2026-09-11",
-   "blurb": "Nature's Ben Deighton on why AI researchers forgo seven-figure industry pay for academic freedom, and the hybrid models that may let them have both."
   },
   {
    "url": "https://nautil.us/a-natural-solution-to-the-replication-crisis-in-science-1284942/",
@@ -321,19 +184,6 @@
    "blurb": "Strogatz uses Wimbledon and the U.S. Open as two visions of mathematics’ future — one prizing style and understanding, the other brash and democratic — and admits ambivalence about what AI proof-generation might cost the discipline."
   },
   {
-   "url": "https://terrytao.wordpress.com/2026/09/13/happy-those-able-to-know-the-causes-of-things/",
-   "hash": "0d4e64b8e289cbd3bd301d99d49323a3aef402b01eaafc1756ac73467079607e",
-   "title": "Happy, those able to know the causes of things",
-   "source": "Terence Tao’s blog",
-   "author": "Nestor Guillen",
-   "date": "2026-09-13T18:27:49+00:00",
-   "topic": "science-ai",
-   "column": "main",
-   "score": 0.87,
-   "added": "2026-09-14",
-   "blurb": "Guillen argues that large language models are cultural technologies synthesising humanity’s accumulated mathematics, so their discoveries should be a source of communal pride — and are probably confined to the ‘convex hull’ of existing ideas."
-  },
-  {
    "url": "https://marginalrevolution.com/marginalrevolution/2026/09/a-simple-model-of-ai-aided-economic-growth.html",
    "hash": "b0a52f280cff37ab253286e3f30197969f4923b919d751df5228a76757c8975d",
    "title": "A simple model of AI-aided economic growth",
@@ -384,54 +234,6 @@
    "score": 0.88,
    "added": "2026-09-14",
    "blurb": "Cowen highlights Hillary Vipond’s study of 170 million British census records: when bootmaking mechanised, 153,000 artisanal jobs vanished and 140,000 new ones appeared, but the adjustment fell on young entrants rather than displaced incumbents."
-  },
-  {
-   "url": "https://www.theatlantic.com/politics/2026/09/ai-dario-amodei-essay/688596/",
-   "hash": "4256f4f05d2a2a570a9fd5cee05f6e25398db08062bdb3e7c3f04925c2d9b038",
-   "title": "AI Is Running Laps Around Our Political System",
-   "source": "The Atlantic",
-   "author": "Toluse Olorunnipa",
-   "date": "2026-09-12T18:32:33+00:00",
-   "topic": "progress-econ",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-14"
-  },
-  {
-   "url": "https://marginalrevolution.com/marginalrevolution/2026/09/dario-calls-for-a-pause.html",
-   "hash": "bdbd922c2f6ce07c5b67ccebef45f6b135db047062e870750806e9e94990402f",
-   "title": "Dario Calls for a Pause",
-   "source": "Marginal Revolution",
-   "author": "Alex Tabarrok",
-   "date": "2026-09-12T15:44:51+00:00",
-   "topic": "science-ai",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-14"
-  },
-  {
-   "url": "https://www.ft.com/content/cae60732-f929-4735-a627-db8c14e7c7ed",
-   "hash": "ec6e5ae8ce644ff261eeadb5b7a9d697c961e3efbfac339fec7a09b85ccc3557",
-   "title": "Trump rejects calls from tech bosses for AI slowdown",
-   "source": "Financial Times",
-   "author": "",
-   "date": "2026-09-13T21:34:22+00:00",
-   "topic": "science-ai",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-14"
-  },
-  {
-   "url": "https://www.nytimes.com/2026/09/13/us/politics/ai-catastrophe-fears-washington.html",
-   "hash": "7fcd06198b042d5423e6a4c220c9396a8a4724b8fd901bd1086ef9a49e06e8a5",
-   "title": "As Fears of A.I. Catastrophe Magnify, Washington Stirs, but Mostly Slumbers",
-   "source": "The New York Times",
-   "author": "David E. Sanger and Dustin Volz",
-   "date": "2026-09-13T13:37:48+00:00",
-   "topic": "science-ai",
-   "column": "sidebar",
-   "score": 0.59,
-   "added": "2026-09-14"
   },
   {
    "url": "https://www.construction-physics.com/p/reading-list-09122026",
@@ -528,6 +330,204 @@
    "column": "sidebar",
    "score": 0.59,
    "added": "2026-09-14"
+  },
+  {
+   "url": "https://www.scientificamerican.com/article/25-winners-of-maths-nobel-prize-decry-the-ai-invasion-of-their-discipline/",
+   "title": "25 winners of math’s ‘Nobel Prize’ decry the AI invasion of their discipline",
+   "source": "Scientific American",
+   "author": "",
+   "date": "2026-09-14T15:00:00+00:00",
+   "topic": "science-ai",
+   "score": 0.94,
+   "blurb": "A new declaration from 25 Fields Medal winners voices growing alarm over a “severe misalignment” between the tech industry and mathematics, a week after AI toppled one of the field’s biggest open problems.",
+   "hash": "51b98891f3de4f744d15b5296276893e9c16f9249f523aed66af4c8d055f5e38",
+   "added": "2026-09-15",
+   "column": "main"
+  },
+  {
+   "url": "https://terrytao.wordpress.com/2026/09/14/why-i-do-mathematical-research/",
+   "title": "Why I do mathematical research",
+   "source": "Terence Tao’s blog",
+   "author": "Emily Riehl",
+   "date": "2026-09-14T15:00:24+00:00",
+   "topic": "science-ai",
+   "score": 0.89,
+   "blurb": "Emily Riehl, guest-posting on Terence Tao’s blog, argues that a purpose of mathematical research is finding the simplest explanation of a phenomenon at the “right” level of abstraction — a matter of taste as much as truth.",
+   "hash": "0f7a3240450223eb1bf1b5a78634167a19ccbc4df5dc38af58a2ee61a674d98c",
+   "added": "2026-09-15",
+   "column": "main"
+  },
+  {
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/09/ai-redistribution-and-the-size-of-the-pie.html",
+   "title": "AI, Redistribution, and the Size of the Pie",
+   "source": "Marginal Revolution",
+   "author": "Alex Tabarrok",
+   "date": "2026-09-14T11:18:04+00:00",
+   "topic": "progress-econ",
+   "score": 0.91,
+   "blurb": "Alex Tabarrok on the Anthropic economics team’s new paper Economic Scenarios for Transformative AI, which makes its assumptions explicit and ships a scenario explorer for AI capability, adoption speed, and augmentation versus automation.",
+   "hash": "b1071ac0705a18643b0796e7d17a680a0f0b54ed9b5308383a1dea7992300fa7",
+   "added": "2026-09-15",
+   "column": "main"
+  },
+  {
+   "url": "https://marginalrevolution.com/marginalrevolution/2026/09/does-ai-assistance-enhance-or-erode-expertise.html",
+   "title": "Does AI assistance enhance or erode expertise?",
+   "source": "Marginal Revolution",
+   "author": "Tyler Cowen",
+   "date": "2026-09-14T04:14:34+00:00",
+   "topic": "science-ai",
+   "score": 0.9,
+   "blurb": "A pre-registered three-month RCT gave 133 patent lawyers at eleven US firms a custom AI drafting assistant to test whether AI help builds or erodes professional expertise.",
+   "hash": "b90b65ed6bf35b6510307ff6896ad045422c682704ba259e26362a2f499d36ae",
+   "added": "2026-09-15",
+   "column": "main"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-026-02882-x",
+   "title": "Drug firms’ secret data supercharge AI protein models",
+   "source": "Nature",
+   "author": "Ewen Callaway",
+   "date": "2026-09-14T00:00:00+00:00",
+   "topic": "science-ai",
+   "score": 0.88,
+   "blurb": "An AI system trained on more than 20,000 proprietary protein structures from pharmaceutical companies outperforms AlphaFold-like models that rely on public data alone.",
+   "hash": "a2f3fe21e7617791ef7481454012ec5d1d198cd508ce3a175e5aa9a759d3b514",
+   "added": "2026-09-15",
+   "column": "main"
+  },
+  {
+   "url": "https://www.astralcodexten.com/p/king-ludd",
+   "title": "King Ludd",
+   "source": "Astral Codex Ten",
+   "author": "Scott Alexander",
+   "date": "2026-09-14T23:56:40+00:00",
+   "topic": "progress-econ",
+   "score": 0.88,
+   "blurb": "Scott Alexander traces the Celtic god Nodens through Tolkien, Lovecraft and the Luddite riots to argue that every panic to cram a technology back into its box is the same myth — and that humanity “can take its finger off the scale any time it wants.”",
+   "hash": "e5322bd99bba4699c3d2f640808bea149e845991afe1191ff36441269a9dc754",
+   "added": "2026-09-15",
+   "column": "main"
+  },
+  {
+   "url": "https://www.nytimes.com/2026/09/14/us/politics/trump-ai-regulation-anthropic-dario-amodei.html",
+   "title": "Trump Rejects Talk of A.I. Regulation and Calls Out Anthropic’s CEO",
+   "source": "The New York Times",
+   "author": "Jonathan Swan and Michael Gold",
+   "date": "2026-09-14T20:53:24+00:00",
+   "topic": "science-ai",
+   "score": 0.59,
+   "hash": "d4ac9d6c3760bbd121adfde67aca0150274c6dcb44f930803c87e51408beb73a",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.ft.com/content/bab5c4c5-5377-4dd0-8b46-d8c4ce9a36d5",
+   "title": "Bannon and Sanders unite over AI safety as Trump condemns warnings as a ‘hoax’",
+   "source": "Financial Times",
+   "author": "",
+   "date": "2026-09-14T15:41:02+00:00",
+   "topic": "science-ai",
+   "score": 0.59,
+   "hash": "e3bcb5963432839e429e28efb8d6379e063974e9f4e9904b9f74d4baebfe6edb",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.nytimes.com/2026/09/14/health/ai-doctors-medicare-fda.html",
+   "title": "Trump Administration Moves to Integrate A.I. Into Medical Care Despite Concerns",
+   "source": "The New York Times",
+   "author": "Christina Jewett",
+   "date": "2026-09-14T17:38:00+00:00",
+   "topic": "science-ai",
+   "score": 0.59,
+   "hash": "a0ddad84e202d010aa1ceba9832035d1252c7b3394673454d1ea4452544b4f43",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.nature.com/articles/d41586-026-02895-6",
+   "title": "‘Multifunctional’ brain implant translates speech and gestures in real time",
+   "source": "Nature",
+   "author": "Miryam Naddaf",
+   "date": "2026-09-14T00:00:00+00:00",
+   "topic": "science-ai",
+   "score": 0.59,
+   "hash": "2593e2f0263837ae4fd9f1e10d21b943f2e134ece927476a9d46630b2d1d8a2b",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.theatlantic.com/family/2026/09/baby-child-care-pay-stay-home/688590/",
+   "title": "The Biggest Obstacle to Universal Child Care: Babies",
+   "source": "The Atlantic",
+   "author": "Kendra Hurley",
+   "date": "2026-09-14T11:00:00+00:00",
+   "topic": "demographics",
+   "score": 0.59,
+   "hash": "dc44bf416a1e4968439fdf8ca1c006e0e779f73719f099db54478986c6e55bb6",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.newyorker.com/culture/the-lede/the-sisters-buying-homes-together",
+   "title": "The Sisters Buying Homes Together",
+   "source": "The New Yorker",
+   "author": "Kelly Marie Coyne",
+   "date": "2026-09-14T10:00:00+00:00",
+   "topic": "demographics",
+   "score": 0.59,
+   "hash": "a74f72e6994e4ea38f81d2f3bfe22556a138155f88352513ca52c540987f9012",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.economist.com/china/2026/09/14/chinas-tutoring-crackdown-has-created-a-black-market",
+   "title": "China’s tutoring crackdown has created a black market",
+   "source": "The Economist",
+   "author": "",
+   "date": "2026-09-14T15:11:06+00:00",
+   "topic": "geopolitics",
+   "score": 0.59,
+   "hash": "d6a90fd2ea6c6b65eb4d5ecaa56476ae6f1a7be6931c72539387c922d9805d5e",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.newyorker.com/magazine/2026/09/21/the-everywhere-millionaire-owen-zidar-and-eric-zwick-book-review",
+   "title": "The Wealthiest—and Stealthiest—Class in America",
+   "source": "The New Yorker",
+   "author": "John Lanchester",
+   "date": "2026-09-14T10:00:00+00:00",
+   "topic": "progress-econ",
+   "score": 0.59,
+   "hash": "04c34ed8fc56eac1a2c0e56c1b97fbe520bfbae2581ca7f289506162b227b85e",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.slowboring.com/p/bay-area-officials-want-more-housing",
+   "title": "Bay Area officials want more housing to keep up with the A.I. boom. One developer sees a different opportunity.",
+   "source": "Slow Boring",
+   "author": "Halina Bennet",
+   "date": "2026-09-14T22:01:53+00:00",
+   "topic": "progress-econ",
+   "score": 0.59,
+   "hash": "6aed97386a2fab8dc8f936c7564b4d625160afbb372e6379f11b6d522fa7a27c",
+   "added": "2026-09-15",
+   "column": "sidebar"
+  },
+  {
+   "url": "https://www.theatlantic.com/books/2026/09/jon-ronson-castle-book-review/688586/",
+   "title": "A Nation of Strange, Idle Men",
+   "source": "The Atlantic",
+   "author": "Jeremy Gordon",
+   "date": "2026-09-14T15:24:20+00:00",
+   "topic": "progress-econ",
+   "score": 0.59,
+   "hash": "0f8bf79dbd4dff9fa6f5f26a1834c55756cf60aae260d96e9d7256a9c8e5961a",
+   "added": "2026-09-15",
+   "column": "sidebar"
   }
  ]
 }
